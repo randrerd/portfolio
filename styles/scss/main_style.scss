@@ -37,6 +37,15 @@ nav {
         align-self: flex-start;
         padding: 2% 7.5%;
         margin-top: 1.5%;
+        font-family: $secondaryFontStack;
+        background-color: $primaryButtonColor;
+        transition-duration: 0.4s;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        font-size: 17px;
+        &:hover {
+            @extend %mainButtonBackgroundColorHover;
+        }
         }
 
     }
