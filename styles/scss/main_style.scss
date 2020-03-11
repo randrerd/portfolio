@@ -1,0 +1,42 @@
+@import 'variables';
+@import 'reset';
+
+main {
+    height: 100vh;
+    @extend %mainBackgroundColor;
+    padding: 1.5% 3%;
+}
+
+nav {
+    ul {
+        @extend %flexJustifyEvenly;
+        font-family: $secondaryFontStack;
+        position: fixed;
+        width: 100vw;
+        a {
+            font-weight: 600;
+            &:hover {
+                color: rgb(63, 63, 63);
+            }
+        }
+    }
+}
+
+.mainHeaderWrapper {
+    @extend %flexJustifyCenter;
+    height: 100%;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: fit-content;
+    margin: 0 25vw;
+    h1 {
+        font-family: $primaryFontStack;
+        font-size: 64px;
+    }
+    button {
+        align-self: flex-start;
+        padding: 2% 7.5%;
+        margin-top: 1.5%;
+        }
+
+    }

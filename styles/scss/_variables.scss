@@ -1,0 +1,35 @@
+
+/*FONT STACKS*/
+
+$primaryFontStack: 'Tomorrow', Arial, sans-serif;
+$secondaryFontStack: 'Roboto', Arial, sans-serif;
+
+/*COLORS*/
+
+%mainBackgroundColor {
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);    
+}
+
+%mainButtonBackgroundColor { 
+    background-color: lightgrey;
+}
+
+%mainButtonBackgroundColorHover {
+    background-position: right center; 
+}
+
+
+/*POSITIONING*/
+
+%flexJustifyEvenly {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+%flexJustifyCenter {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+

@@ -1,0 +1,78 @@
+/*FONT STACKS*/
+/*COLORS*/
+main {
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+
+.mainHeaderWrapper button {
+  background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8 51%, #757F9A 100%);
+}
+
+.mainHeaderWrapper button:hover {
+  background-position: right center;
+}
+
+/*POSITIONING*/
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+.mainHeaderWrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+* {
+  -webkit-appearance: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-weight: normal;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  height: 100vh;
+  padding: 1.5% 3%;
+}
+
+nav ul {
+  font-family: "Roboto", Arial, sans-serif;
+  position: fixed;
+  width: 100vw;
+}
+nav ul a {
+  font-weight: 600;
+}
+nav ul a:hover {
+  color: #3f3f3f;
+}
+
+.mainHeaderWrapper {
+  height: 100%;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: fit-content;
+  margin: 0 25vw;
+}
+.mainHeaderWrapper h1 {
+  font-family: "Tomorrow", Arial, sans-serif;
+  font-size: 64px;
+}
+.mainHeaderWrapper button {
+  align-self: flex-start;
+  padding: 2% 7.5%;
+  margin-top: 1.5%;
+}
+
+/*# sourceMappingURL=style.css.map */
