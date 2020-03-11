@@ -1,18 +1,12 @@
 @import 'variables';
 @import 'reset';
 
-main {
-    height: 100vh;
-    @extend %mainBackgroundColor;
-    padding: 1.5% 3%;
-}
-
 nav {
     ul {
         @extend %flexJustifyEvenly;
         font-family: $secondaryFontStack;
-        position: fixed;
-        width: 100vw;
+        @extend %mainBackgroundColor;
+        padding: 1.5% 3%;
         a {
             font-weight: 400;
             color: white;
@@ -21,6 +15,11 @@ nav {
             }
         }
     }
+}
+
+main {
+    height: 100vh;
+    @extend %mainBackgroundColor;
 }
 
 .mainHeaderWrapper {
@@ -32,25 +31,73 @@ nav {
     margin: 0 25vw;
     h1 {
         font-family: $primaryFontStack;
-        font-size: 64px;
         color: $primaryTextColor;
+        font-size: 64px;
     }
     .button {
+        @extend %mainButtonStyle;
         align-self: flex-start;
-        padding: 3% 7.5%;
         margin-top: 1.5%;
         font-family: $secondaryFontStack;
-        background-color: $primaryButtonColor;
-        transition-duration: 0.4s;
-        font-weight: 700;
-        letter-spacing: 0.15em;
-        font-size: 17px;
         &:hover {
             @extend %mainButtonBackgroundColorHover;
         }
         }
 
     }
+
 section.about {
     height: 100vh;
-}
+    @extend %aboutBackgroundColor;
+    padding: 1.5% 3%;;
+    h2 {
+        font-family: $primaryFontStack;
+        color: $secondaryTextColor;
+        font-size: 56px;
+        margin-top: 2%;
+    }
+    .skillsContainer {
+        display: flex;
+        justify-content: center;
+        flex-flow: row nowrap;
+        margin: 5%;
+    }
+    .skillsWrapper {
+        margin: 2.5%;
+        p {
+            font-family: $secondaryFontStack;
+            color: $secondaryTextColor;
+            text-align: center;
+            margin-top: 2.5%;
+            width: 19vw;
+        }
+        .flatBackground {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 3%;
+            width: 20vw;
+            max-width: 18vw;
+            min-height: 33vh;
+            transition-duration: 0.5s;
+            border-radius: 65px;
+            border: 2px solid #f3c1bd;
+            &:hover {
+                @extend %skillsWrapperColorHover;
+                border-radius: 70px;
+            }
+            img.multipleitems {
+                width: 7vw;
+                max-width: 7vw;
+                max-height: 98px;
+            }
+            img {
+                width: 7vw; 
+                max-height: 98px;
+                height: auto;
+                max-width: 7vw;
+            }
+        }
+        }
+    }

@@ -6,18 +6,38 @@ $secondaryFontStack: 'Roboto', Arial, sans-serif;
 
 /*COLORS*/
 $primaryTextColor: rgb(192, 216, 215);
+$secondaryTextColor: #f3c1bd;
 $primaryButtonColor: #86CB92;
+%mainBackgroundColor {
+    background-image: linear-gradient(to right, #190A19 0%, #260F26 100%);    
+}
+%aboutBackgroundColor {
+    background-image: linear-gradient(to right, #310b13 0%, #2b0a11 100%);
+}
+%skillsWrapperColor {
+    background-image: radial-gradient(rgb(145, 115, 78), #BF9F78)
+}
+%skillsWrapperColorHover {
+    background-image: radial-gradient(#a8817e, #f3c1bd)
+}
+
+
+/*BUTTON STYLING*/
+
+%mainButtonStyle {
+    padding: 3% 7.5%;
+    background-color: $primaryButtonColor;
+    transition-duration: 0.4s;
+    font-weight: 900;
+    letter-spacing: 0.15em;
+    font-size: 17px;
+}
 
 %mainButtonBackgroundColorHover {
     background-position: right center; 
     background-image: linear-gradient(to right, $primaryButtonColor 0%, rgb(96, 149, 172));
     color: white;
 }
-
-%mainBackgroundColor {
-    background-image: linear-gradient(to right, #190A19 0%, #260F26 100%);    
-}
-
 
 /*POSITIONING*/
 

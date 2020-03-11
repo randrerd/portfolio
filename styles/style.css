@@ -1,13 +1,31 @@
 /*FONT STACKS*/
 /*COLORS*/
+main, nav ul {
+  background-image: linear-gradient(to right, #190A19 0%, #260F26 100%);
+}
+
+section.about {
+  background-image: linear-gradient(to right, #310b13 0%, #2b0a11 100%);
+}
+
+section.about .skillsWrapper .flatBackground:hover {
+  background-image: radial-gradient(#a8817e, #f3c1bd);
+}
+
+/*BUTTON STYLING*/
+.mainHeaderWrapper .button {
+  padding: 3% 7.5%;
+  background-color: #86CB92;
+  transition-duration: 0.4s;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  font-size: 17px;
+}
+
 .mainHeaderWrapper .button:hover {
   background-position: right center;
   background-image: linear-gradient(to right, #86CB92 0%, #6095ac);
   color: white;
-}
-
-main {
-  background-image: linear-gradient(to right, #190A19 0%, #260F26 100%);
 }
 
 /*POSITIONING*/
@@ -43,15 +61,9 @@ a.button {
   cursor: default;
 }
 
-main {
-  height: 100vh;
-  padding: 1.5% 3%;
-}
-
 nav ul {
   font-family: "Roboto", Arial, sans-serif;
-  position: fixed;
-  width: 100vw;
+  padding: 1.5% 3%;
 }
 nav ul a {
   font-weight: 400;
@@ -59,6 +71,10 @@ nav ul a {
 }
 nav ul a:hover {
   color: #746674;
+}
+
+main {
+  height: 100vh;
 }
 
 .mainHeaderWrapper {
@@ -70,22 +86,66 @@ nav ul a:hover {
 }
 .mainHeaderWrapper h1 {
   font-family: "Tomorrow", Arial, sans-serif;
-  font-size: 64px;
   color: #c0d8d7;
+  font-size: 64px;
 }
 .mainHeaderWrapper .button {
   align-self: flex-start;
-  padding: 3% 7.5%;
   margin-top: 1.5%;
   font-family: "Roboto", Arial, sans-serif;
-  background-color: #86CB92;
-  transition-duration: 0.4s;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  font-size: 17px;
 }
 section.about {
   height: 100vh;
+  padding: 1.5% 3%;
+}
+section.about h2 {
+  font-family: "Tomorrow", Arial, sans-serif;
+  color: #f3c1bd;
+  font-size: 56px;
+  margin-top: 2%;
+}
+section.about .skillsContainer {
+  display: flex;
+  justify-content: center;
+  flex-flow: row nowrap;
+  margin: 5%;
+}
+section.about .skillsWrapper {
+  margin: 2.5%;
+}
+section.about .skillsWrapper p {
+  font-family: "Roboto", Arial, sans-serif;
+  color: #f3c1bd;
+  text-align: center;
+  margin-top: 2.5%;
+  width: 19vw;
+}
+section.about .skillsWrapper .flatBackground {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  width: 20vw;
+  max-width: 18vw;
+  min-height: 33vh;
+  transition-duration: 0.5s;
+  border-radius: 65px;
+  border: 2px solid #f3c1bd;
+}
+section.about .skillsWrapper .flatBackground:hover {
+  border-radius: 70px;
+}
+section.about .skillsWrapper .flatBackground img.multipleitems {
+  width: 7vw;
+  max-width: 7vw;
+  max-height: 98px;
+}
+section.about .skillsWrapper .flatBackground img {
+  width: 7vw;
+  max-height: 98px;
+  height: auto;
+  max-width: 7vw;
 }
 
 /*# sourceMappingURL=style.css.map */
