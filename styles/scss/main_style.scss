@@ -32,6 +32,7 @@ nav {
     h1 {
         font-family: $primaryFontStack;
         font-size: 64px;
+        color: $primaryHeadingColor;
     }
     button {
         align-self: flex-start;

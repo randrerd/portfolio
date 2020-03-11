@@ -1,15 +1,13 @@
 /*FONT STACKS*/
 /*COLORS*/
 main {
-  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-}
-
-.mainHeaderWrapper button {
-  background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8 51%, #757F9A 100%);
+  background-image: linear-gradient(to right, #e6e9f0 0%, #5e6b7C 100%);
 }
 
 .mainHeaderWrapper button:hover {
   background-position: right center;
+  background-image: linear-gradient(to right, #728b92 0%, #6095ac);
+  color: white;
 }
 
 /*POSITIONING*/
@@ -68,11 +66,18 @@ nav ul a:hover {
 .mainHeaderWrapper h1 {
   font-family: "Tomorrow", Arial, sans-serif;
   font-size: 64px;
+  color: #121b1d;
 }
 .mainHeaderWrapper button {
   align-self: flex-start;
   padding: 2% 7.5%;
   margin-top: 1.5%;
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #728b92;
+  transition-duration: 0.4s;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  font-size: 17px;
 }
 
 /*# sourceMappingURL=style.css.map */

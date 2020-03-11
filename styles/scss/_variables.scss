@@ -6,12 +6,13 @@ $secondaryFontStack: 'Roboto', Arial, sans-serif;
 
 /*COLORS*/
 
+
 %mainBackgroundColor {
-    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);    
+    background-image: linear-gradient(to right, #e6e9f0 0%, #5e6b7C 100%);    
 }
 
+$primaryHeadingColor: rgb(18, 27, 29);
 $primaryButtonColor: rgb(114, 139, 146);
-
 %mainButtonBackgroundColorHover {
     background-position: right center; 
     background-image: linear-gradient(to right, $primaryButtonColor 0%, rgb(96, 149, 172));
