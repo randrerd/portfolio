@@ -1,13 +1,13 @@
 /*FONT STACKS*/
 /*COLORS*/
-main {
-  background-image: linear-gradient(to right, #e6e9f0 0%, #5e6b7C 100%);
+.mainHeaderWrapper .button:hover {
+  background-position: right center;
+  background-image: linear-gradient(to right, #86CB92 0%, #6095ac);
+  color: white;
 }
 
-.mainHeaderWrapper button:hover {
-  background-position: right center;
-  background-image: linear-gradient(to right, #728b92 0%, #6095ac);
-  color: white;
+main {
+  background-image: linear-gradient(to right, #190A19 0%, #260F26 100%);
 }
 
 /*POSITIONING*/
@@ -39,6 +39,10 @@ img {
   height: auto;
 }
 
+a.button {
+  cursor: default;
+}
+
 main {
   height: 100vh;
   padding: 1.5% 3%;
@@ -50,10 +54,11 @@ nav ul {
   width: 100vw;
 }
 nav ul a {
-  font-weight: 600;
+  font-weight: 400;
+  color: white;
 }
 nav ul a:hover {
-  color: #3f3f3f;
+  color: #746674;
 }
 
 .mainHeaderWrapper {
@@ -66,18 +71,21 @@ nav ul a:hover {
 .mainHeaderWrapper h1 {
   font-family: "Tomorrow", Arial, sans-serif;
   font-size: 64px;
-  color: #121b1d;
+  color: #c0d8d7;
 }
-.mainHeaderWrapper button {
+.mainHeaderWrapper .button {
   align-self: flex-start;
-  padding: 2% 7.5%;
+  padding: 3% 7.5%;
   margin-top: 1.5%;
   font-family: "Roboto", Arial, sans-serif;
-  background-color: #728b92;
+  background-color: #86CB92;
   transition-duration: 0.4s;
   font-weight: 700;
   letter-spacing: 0.15em;
   font-size: 17px;
+}
+section.about {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */

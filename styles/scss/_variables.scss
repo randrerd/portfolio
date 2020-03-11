@@ -5,18 +5,17 @@ $primaryFontStack: 'Tomorrow', Arial, sans-serif;
 $secondaryFontStack: 'Roboto', Arial, sans-serif;
 
 /*COLORS*/
+$primaryTextColor: rgb(192, 216, 215);
+$primaryButtonColor: #86CB92;
 
-
-%mainBackgroundColor {
-    background-image: linear-gradient(to right, #e6e9f0 0%, #5e6b7C 100%);    
-}
-
-$primaryHeadingColor: rgb(18, 27, 29);
-$primaryButtonColor: rgb(114, 139, 146);
 %mainButtonBackgroundColorHover {
     background-position: right center; 
     background-image: linear-gradient(to right, $primaryButtonColor 0%, rgb(96, 149, 172));
     color: white;
+}
+
+%mainBackgroundColor {
+    background-image: linear-gradient(to right, #190A19 0%, #260F26 100%);    
 }
 
 
@@ -33,4 +32,3 @@ $primaryButtonColor: rgb(114, 139, 146);
     justify-content: center;
     flex-flow: row wrap;
 }
-
