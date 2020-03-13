@@ -3,22 +3,28 @@
 
 $primaryFontStack: 'Tomorrow', Arial, sans-serif;
 $secondaryFontStack: 'Roboto', Arial, sans-serif;
+$thirdFontStack: 'Poppins', Arial, sans-serif;
 
 /*COLORS*/
-$primaryTextColor: rgb(192, 216, 215);
-$secondaryTextColor: #f3c1bd;
+$primaryTextColor: #c0d8d7;
+$secondaryTextColor: #F2E8B6;
 $primaryButtonColor: #86CB92;
+$aboutSectionSecondaryColor: #e4ddd3;
 %mainBackgroundColor {
     background-image: linear-gradient(to right, #190A19 0%, #260F26 100%);    
 }
 %aboutBackgroundColor {
-    background-image: linear-gradient(to right, #310b13 0%, #2b0a11 100%);
+    background-image: linear-gradient(to right, rgb(87, 22, 36) 0%, rgb(100, 25, 41) 100%);
 }
 %skillsWrapperColor {
     background-image: radial-gradient(rgb(145, 115, 78), #BF9F78)
 }
 %skillsWrapperColorHover {
-    background-image: radial-gradient(#a8817e, #f3c1bd)
+    background-image: radial-gradient(rgb(161, 155, 145), rgb(228, 221, 211))
+}
+
+%projectBackgroundColor {
+    background-image: linear-gradient(to right, #260101 0%,  #260101 100%);
 }
 
 

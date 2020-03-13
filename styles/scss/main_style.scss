@@ -49,7 +49,7 @@ main {
 section.about {
     height: 100vh;
     @extend %aboutBackgroundColor;
-    padding: 1.5% 3%;;
+    padding: 1.5%;
     h2 {
         font-family: $primaryFontStack;
         color: $secondaryTextColor;
@@ -63,13 +63,17 @@ section.about {
         margin: 5%;
     }
     .skillsWrapper {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
         margin: 2.5%;
         p {
-            font-family: $secondaryFontStack;
-            color: $secondaryTextColor;
+            font-family: $thirdFontStack;
+            color: $aboutSectionSecondaryColor;
             text-align: center;
             margin-top: 2.5%;
-            width: 19vw;
+            width: 15vw;
+            font-size: 24px;
         }
         .flatBackground {
             display: flex;
@@ -77,19 +81,20 @@ section.about {
             justify-content: center;
             align-items: center;
             padding: 3%;
-            width: 20vw;
-            max-width: 18vw;
+            width: 15vw;
+            max-width: 15vw;
             min-height: 33vh;
-            transition-duration: 0.5s;
+            transition-duration: 0.3s;
             border-radius: 65px;
-            border: 2px solid #f3c1bd;
+            border: 2px solid $aboutSectionSecondaryColor;
+            margin: 1.5%;
             &:hover {
                 @extend %skillsWrapperColorHover;
-                border-radius: 70px;
+                border-radius: 80px;
             }
             img.multipleitems {
-                width: 7vw;
-                max-width: 7vw;
+                width: 6vw;
+                max-width: 6vw;
                 max-height: 98px;
             }
             img {
@@ -101,3 +106,34 @@ section.about {
         }
         }
     }
+
+    section.projects {
+        height: 100vh;
+        padding: 1.5%;
+        @extend %projectBackgroundColor;
+        h2 {
+            font-family: $primaryFontStack;
+            color: $secondaryTextColor;
+            font-size: 56px;
+            margin-top: 2%;
+        }
+        .projectsContainer {
+            display: flex;
+            align-items: center;
+            height: 80vh;
+            .projectWrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            p {
+                color: white;
+            }
+            a {
+                color: white;
+            }
+        }
+            img {
+                width: 75%;
+            }
+        }

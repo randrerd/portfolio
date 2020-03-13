@@ -1,14 +1,19 @@
+/*FONT STACKS*/
 /*COLORS*/
 main, nav ul {
   background-image: linear-gradient(to right, #190A19 0%, #260F26 100%);
 }
 
 section.about {
-  background-image: linear-gradient(to right, #310b13 0%, #2b0a11 100%);
+  background-image: linear-gradient(to right, #571624 0%, #641929 100%);
 }
 
 section.about .skillsWrapper .flatBackground:hover {
-  background-image: radial-gradient(#a8817e, #f3c1bd);
+  background-image: radial-gradient(#a19b91, #e4ddd3);
+}
+
+section.projects {
+  background-image: linear-gradient(to right, #260101 0%, #260101 100%);
 }
 
 /*BUTTON STYLING*/
@@ -95,11 +100,11 @@ main {
 }
 section.about {
   height: 100vh;
-  padding: 1.5% 3%;
+  padding: 1.5%;
 }
 section.about h2 {
   font-family: "Tomorrow", Arial, sans-serif;
-  color: #f3c1bd;
+  color: #F2E8B6;
   font-size: 56px;
   margin-top: 2%;
 }
@@ -110,14 +115,18 @@ section.about .skillsContainer {
   margin: 5%;
 }
 section.about .skillsWrapper {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
   margin: 2.5%;
 }
 section.about .skillsWrapper p {
-  font-family: "Roboto", Arial, sans-serif;
-  color: #f3c1bd;
+  font-family: "Poppins", Arial, sans-serif;
+  color: #e4ddd3;
   text-align: center;
   margin-top: 2.5%;
-  width: 19vw;
+  width: 15vw;
+  font-size: 24px;
 }
 section.about .skillsWrapper .flatBackground {
   display: flex;
@@ -125,19 +134,20 @@ section.about .skillsWrapper .flatBackground {
   justify-content: center;
   align-items: center;
   padding: 3%;
-  width: 20vw;
-  max-width: 18vw;
+  width: 15vw;
+  max-width: 15vw;
   min-height: 33vh;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
   border-radius: 65px;
-  border: 2px solid #f3c1bd;
+  border: 2px solid #e4ddd3;
+  margin: 1.5%;
 }
 section.about .skillsWrapper .flatBackground:hover {
-  border-radius: 70px;
+  border-radius: 80px;
 }
 section.about .skillsWrapper .flatBackground img.multipleitems {
-  width: 7vw;
-  max-width: 7vw;
+  width: 6vw;
+  max-width: 6vw;
   max-height: 98px;
 }
 section.about .skillsWrapper .flatBackground img {
@@ -145,6 +155,36 @@ section.about .skillsWrapper .flatBackground img {
   max-height: 98px;
   height: auto;
   max-width: 7vw;
+}
+
+section.projects {
+  height: 100vh;
+  padding: 1.5%;
+}
+section.projects h2 {
+  font-family: "Tomorrow", Arial, sans-serif;
+  color: #F2E8B6;
+  font-size: 56px;
+  margin-top: 2%;
+}
+section.projects .projectsContainer {
+  display: flex;
+  align-items: center;
+  height: 80vh;
+}
+section.projects .projectsContainer .projectWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.projects .projectsContainer p {
+  color: white;
+}
+section.projects .projectsContainer a {
+  color: white;
+}
+section.projects img {
+  width: 75%;
 }
 
 /*# sourceMappingURL=style.css.map */
