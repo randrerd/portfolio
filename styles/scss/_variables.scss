@@ -7,24 +7,28 @@ $thirdFontStack: 'Poppins', Arial, sans-serif;
 
 /*COLORS*/
 $primaryTextColor: #c0d8d7;
-$secondaryTextColor: #F2E8B6;
+$secondaryTextColor: rgb(22, 22, 22);
 $primaryButtonColor: #86CB92;
-$aboutSectionSecondaryColor: #e4ddd3;
+$aboutSectionSecondaryColor: #252423;
 %mainBackgroundColor {
-    background-image: linear-gradient(to right, #190A19 0%, #260F26 100%);    
+    background-image: linear-gradient(to bottom, #0f1713 -17%, black 100%);    
 }
 %aboutBackgroundColor {
-    background-image: linear-gradient(to right, rgb(87, 22, 36) 0%, rgb(100, 25, 41) 100%);
+    background-image: linear-gradient(to right, #c0d8d7 0%, #c0d8d7 100%);
 }
 %skillsWrapperColor {
     background-image: radial-gradient(rgb(145, 115, 78), #BF9F78)
 }
 %skillsWrapperColorHover {
-    background-image: radial-gradient(rgb(161, 155, 145), rgb(228, 221, 211))
+    background-image: radial-gradient(#d8e9e9, #c0d8d7)
 }
 
 %projectBackgroundColor {
-    background-image: linear-gradient(to right, #260101 0%,  #260101 100%);
+    background: black;
+}
+
+%contactBackgroundColor {
+    background-image: linear-gradient(black 0%, #0f1713 130%);
 }
 
 

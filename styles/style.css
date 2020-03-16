@@ -1,19 +1,23 @@
 /*FONT STACKS*/
 /*COLORS*/
-main, nav ul {
-  background-image: linear-gradient(to right, #190A19 0%, #260F26 100%);
+main {
+  background-image: linear-gradient(to bottom, #0f1713 -17%, black 100%);
 }
 
 section.about {
-  background-image: linear-gradient(to right, #571624 0%, #641929 100%);
+  background-image: linear-gradient(to right, #c0d8d7 0%, #c0d8d7 100%);
 }
 
 section.about .skillsWrapper .flatBackground:hover {
-  background-image: radial-gradient(#a19b91, #e4ddd3);
+  background-image: radial-gradient(#d8e9e9, #c0d8d7);
 }
 
 section.projects {
-  background-image: linear-gradient(to right, #260101 0%, #260101 100%);
+  background: black;
+}
+
+section.contact {
+  background-image: linear-gradient(black 0%, #0f1713 130%);
 }
 
 /*BUTTON STYLING*/
@@ -33,7 +37,7 @@ section.projects {
 }
 
 /*POSITIONING*/
-nav ul {
+section.projects .projectsContainer .projectLinksWrapper, nav ul {
   display: flex;
   justify-content: space-evenly;
   flex-flow: row wrap;
@@ -74,7 +78,7 @@ nav ul a {
   color: white;
 }
 nav ul a:hover {
-  color: #746674;
+  color: #c0d8d7;
 }
 
 main {
@@ -92,6 +96,7 @@ main {
   font-family: "Tomorrow", Arial, sans-serif;
   color: #c0d8d7;
   font-size: 64px;
+  width: 41vw;
 }
 .mainHeaderWrapper .button {
   align-self: flex-start;
@@ -104,9 +109,10 @@ section.about {
 }
 section.about h2 {
   font-family: "Tomorrow", Arial, sans-serif;
-  color: #F2E8B6;
+  color: #161616;
   font-size: 56px;
   margin-top: 2%;
+  margin-left: 10%;
 }
 section.about .skillsContainer {
   display: flex;
@@ -122,7 +128,7 @@ section.about .skillsWrapper {
 }
 section.about .skillsWrapper p {
   font-family: "Poppins", Arial, sans-serif;
-  color: #e4ddd3;
+  color: #252423;
   text-align: center;
   margin-top: 2.5%;
   width: 15vw;
@@ -139,7 +145,7 @@ section.about .skillsWrapper .flatBackground {
   min-height: 33vh;
   transition-duration: 0.3s;
   border-radius: 65px;
-  border: 2px solid #e4ddd3;
+  border: 2px solid #252423;
   margin: 1.5%;
 }
 section.about .skillsWrapper .flatBackground:hover {
@@ -163,9 +169,10 @@ section.projects {
 }
 section.projects h2 {
   font-family: "Tomorrow", Arial, sans-serif;
-  color: #F2E8B6;
+  color: #c0d8d7;
   font-size: 56px;
   margin-top: 2%;
+  margin-left: 10%;
 }
 section.projects .projectsContainer {
   display: flex;
@@ -179,12 +186,29 @@ section.projects .projectsContainer .projectWrapper {
 }
 section.projects .projectsContainer p {
   color: white;
+  font-family: "Poppins", Arial, sans-serif;
+}
+section.projects .projectsContainer .projectLinksWrapper {
+  width: 29vw;
 }
 section.projects .projectsContainer a {
-  color: white;
+  color: #a7dfdf;
+  font-weight: lighter;
+  font-family: "Poppins", Arial, sans-serif;
+}
+section.projects .projectsContainer a:hover {
+  font-weight: normal;
 }
 section.projects img {
-  width: 75%;
+  width: 60%;
+}
+
+section.contact {
+  height: 15vh;
+}
+section.contact h2 {
+  color: #c0d8d7;
+  font-family: "Tomorrow", Arial, sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
