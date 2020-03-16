@@ -57,6 +57,12 @@ $aboutSectionSecondaryColor: #252423;
     flex-flow: row wrap;
 }
 
+%flexJustifyBetween {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
 %flexJustifyCenter {
     display: flex;
     justify-content: center;

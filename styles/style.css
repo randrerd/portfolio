@@ -37,9 +37,15 @@ section.contact {
 }
 
 /*POSITIONING*/
-section.projects .projectsContainer .projectLinksWrapper, nav ul {
+nav ul {
   display: flex;
   justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+section.projects .projectsContainer .projectLinksWrapper {
+  display: flex;
+  justify-content: space-between;
   flex-flow: row wrap;
 }
 
@@ -187,6 +193,7 @@ section.projects .projectsContainer .projectWrapper {
 section.projects .projectsContainer p {
   color: white;
   font-family: "Poppins", Arial, sans-serif;
+  margin-bottom: 1.5%;
 }
 section.projects .projectsContainer .projectLinksWrapper {
   width: 29vw;
@@ -204,11 +211,27 @@ section.projects img {
 }
 
 section.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 15vh;
 }
 section.contact h2 {
   color: #c0d8d7;
   font-family: "Tomorrow", Arial, sans-serif;
+  font-size: 38px;
+  margin-bottom: 1%;
+}
+section.contact .contactIconsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+section.contact .contactIconsContainer img {
+  width: 2vw;
+}
+section.contact .contactIconsContainer a {
+  margin: 3%;
 }
 
 /*# sourceMappingURL=style.css.map */
