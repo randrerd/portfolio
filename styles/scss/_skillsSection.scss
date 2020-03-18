@@ -3,58 +3,58 @@
 section.about {
     height: 100vh;
     @extend %aboutBackgroundColor;
-    padding: 1.5%;
+    padding: 1.5rem;
     h2 {
         font-family: $primaryFontStack;
         color: $secondaryTextColor;
-        font-size: 56px;
-        margin-top: 2%;
-        margin-left: 10%;
+        font-size: 5.6rem;
+        margin-top: 2rem;
+        margin-left: 18rem;
     }
     .skillsContainer {
         display: flex;
         justify-content: center;
         flex-flow: row nowrap;
-        margin: 5%;
+        margin: 7rem;
     }
     .skillsWrapper {
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        margin: 2.5%;
+        margin: 3.5rem;
         p {
             font-family: $thirdFontStack;
             color: $aboutSectionSecondaryColor;
             text-align: center;
-            margin-top: 2.5%;
+            margin-top: 1.75rem;
             width: 15vw;
-            font-size: 24px;
+            font-size: 2.4rem;
         }
         .flatBackground {
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
             align-items: center;
-            padding: 3%;
+            padding: 2.3rem;
             width: 15vw;
             max-width: 15vw;
             min-height: 33vh;
             transition-duration: 0.3s;
-            border-radius: 65px;
-            border: 2px solid $aboutSectionSecondaryColor;
-            margin: 1.5%;
+            border-radius: 6.5rem;
+            border: 0.185rem solid $aboutSectionSecondaryColor;
+            margin: 1rem;
             &:hover {
                 @extend %skillsWrapperColorHover;
-                border-radius: 80px;
+                border-radius: 8.0rem;
             }
             img.multipleitems {
                 width: 6vw;
                 max-width: 6vw;
-                max-height: 98px;
+                max-height: 10rem;
             }
             img {
                 width: 7vw; 
-                max-height: 98px;
+                max-height: 10rem;
                 height: auto;
                 max-width: 7vw;
             }

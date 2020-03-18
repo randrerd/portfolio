@@ -2,14 +2,14 @@
 
 section.projects {
     height: 100vh;
-    padding: 1.5%;
+    padding: 1.5rem;
     @extend %projectBackgroundColor;
     h2 {
         font-family: $primaryFontStack;
         color: $primaryTextColor;
-        font-size: 56px;
-        margin-top: 2%;
-        margin-left: 10%;
+        font-size: 5.6rem;
+        margin-top: 2.3rem;
+        margin-left: 18rem;
     }
     .projectsContainer {
         display: flex;
@@ -21,23 +21,23 @@ section.projects {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin: 2%;
+            margin: 2rem;
             transition-duration: 0.4s;
             width: 36vw;
             height: 43vh;
             &:hover {
                 background-color: #0f1713;
-                border-radius: 80px;
+                border-radius: 8.0rem;
             }
         }
         p {
             color: white;
             font-family: $thirdFontStack;
-            margin-bottom: 1.5%;
-            font-size: 20px;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
         }
         .projectLinksWrapper {
-            margin-top: 1%;
+            margin-top: 0.8rem;
             width: 29vw;
             @extend %flexJustifyBetween;
         }
@@ -45,6 +45,7 @@ section.projects {
             color: #a7dfdf;
             font-weight: lighter;
             font-family: $thirdFontStack;
+            font-size: 1.5rem;
             &:hover {
                 font-weight: normal;
             }

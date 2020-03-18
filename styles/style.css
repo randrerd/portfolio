@@ -132,10 +132,11 @@ section.projects .projectsContainer .projectLinksWrapper {
 
 nav ul {
   font-family: "Roboto", Arial, sans-serif;
-  padding: 1.5% 3%;
+  padding: 2.5rem 2rem;
 }
 nav ul a {
   font-weight: 400;
+  font-size: 1.5rem;
   color: white;
 }
 nav ul a:hover {
@@ -200,60 +201,60 @@ section.projects .projectsContainer .projectLinksWrapper {
 
 section.about {
   height: 100vh;
-  padding: 1.5%;
+  padding: 1.5rem;
 }
 section.about h2 {
   font-family: "Tomorrow", Arial, sans-serif;
   color: #161616;
-  font-size: 56px;
-  margin-top: 2%;
-  margin-left: 10%;
+  font-size: 5.6rem;
+  margin-top: 2rem;
+  margin-left: 18rem;
 }
 section.about .skillsContainer {
   display: flex;
   justify-content: center;
   flex-flow: row nowrap;
-  margin: 5%;
+  margin: 7rem;
 }
 section.about .skillsWrapper {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  margin: 2.5%;
+  margin: 3.5rem;
 }
 section.about .skillsWrapper p {
   font-family: "Poppins", Arial, sans-serif;
   color: #252423;
   text-align: center;
-  margin-top: 2.5%;
+  margin-top: 1.75rem;
   width: 15vw;
-  font-size: 24px;
+  font-size: 2.4rem;
 }
 section.about .skillsWrapper .flatBackground {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  padding: 3%;
+  padding: 2.3rem;
   width: 15vw;
   max-width: 15vw;
   min-height: 33vh;
   transition-duration: 0.3s;
-  border-radius: 65px;
-  border: 2px solid #252423;
-  margin: 1.5%;
+  border-radius: 6.5rem;
+  border: 0.185rem solid #252423;
+  margin: 1rem;
 }
 section.about .skillsWrapper .flatBackground:hover {
-  border-radius: 80px;
+  border-radius: 8rem;
 }
 section.about .skillsWrapper .flatBackground img.multipleitems {
   width: 6vw;
   max-width: 6vw;
-  max-height: 98px;
+  max-height: 10rem;
 }
 section.about .skillsWrapper .flatBackground img {
   width: 7vw;
-  max-height: 98px;
+  max-height: 10rem;
   height: auto;
   max-width: 7vw;
 }
@@ -316,14 +317,14 @@ section.projects .projectsContainer .projectLinksWrapper {
 
 section.projects {
   height: 100vh;
-  padding: 1.5%;
+  padding: 1.5rem;
 }
 section.projects h2 {
   font-family: "Tomorrow", Arial, sans-serif;
   color: #c0d8d7;
-  font-size: 56px;
-  margin-top: 2%;
-  margin-left: 10%;
+  font-size: 5.6rem;
+  margin-top: 2.3rem;
+  margin-left: 18rem;
 }
 section.projects .projectsContainer {
   display: flex;
@@ -336,29 +337,30 @@ section.projects .projectsContainer .projectWrapper {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2%;
+  margin: 2rem;
   transition-duration: 0.4s;
   width: 36vw;
   height: 43vh;
 }
 section.projects .projectsContainer .projectWrapper:hover {
   background-color: #0f1713;
-  border-radius: 80px;
+  border-radius: 8rem;
 }
 section.projects .projectsContainer p {
   color: white;
   font-family: "Poppins", Arial, sans-serif;
-  margin-bottom: 1.5%;
-  font-size: 20px;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
 }
 section.projects .projectsContainer .projectLinksWrapper {
-  margin-top: 1%;
+  margin-top: 0.8rem;
   width: 29vw;
 }
 section.projects .projectsContainer a {
   color: #a7dfdf;
   font-weight: lighter;
   font-family: "Poppins", Arial, sans-serif;
+  font-size: 1.5rem;
 }
 section.projects .projectsContainer a:hover {
   font-weight: normal;
@@ -432,8 +434,8 @@ section.contact {
 section.contact h2 {
   color: #c0d8d7;
   font-family: "Tomorrow", Arial, sans-serif;
-  font-size: 38px;
-  margin-bottom: 1%;
+  font-size: 3.8rem;
+  margin-bottom: 1rem;
 }
 section.contact .contactIconsContainer {
   display: flex;
@@ -444,7 +446,11 @@ section.contact .contactIconsContainer img {
   width: 2vw;
 }
 section.contact .contactIconsContainer a {
-  margin: 3%;
+  margin: 0 0.35rem;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 main {
@@ -456,17 +462,17 @@ main {
   align-items: center;
   flex-flow: column nowrap;
   width: fit-content;
-  margin: 0 25vw;
+  margin: 0 40rem;
 }
 .mainHeaderWrapper h1 {
   font-family: "Tomorrow", Arial, sans-serif;
   color: #c0d8d7;
-  font-size: 64px;
+  font-size: 6.4rem;
   width: 41vw;
 }
 .mainHeaderWrapper .button {
   align-self: flex-start;
-  margin-top: 1.5%;
+  margin-top: 1rem;
   font-family: "Roboto", Arial, sans-serif;
 }
 

@@ -5,6 +5,11 @@
 @import 'projectsSection';
 @import 'footer';
 
+
+html {
+    font-size: 62.5%;
+}
+
 main {
     height: 100vh;
     @extend %mainBackgroundColor;
@@ -16,17 +21,17 @@ main {
     align-items: center;
     flex-flow: column nowrap;
     width: fit-content;
-    margin: 0 25vw;
+    margin: 0 40rem;
     h1 {
         font-family: $primaryFontStack;
         color: $primaryTextColor;
-        font-size: 64px;
+        font-size: 6.4rem;
         width: 41vw;
     }
     .button {
         @extend %mainButtonStyle;
         align-self: flex-start;
-        margin-top: 1.5%;
+        margin-top: 1rem;
         font-family: $secondaryFontStack;
         &:hover {
             @extend %mainButtonBackgroundColorHover;
