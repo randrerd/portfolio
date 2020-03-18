@@ -123,17 +123,29 @@ section.about {
             display: flex;
             align-items: center;
             height: 80vh;
+            justify-content: center;
             .projectWrapper {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-content: center;
+                margin: 2%;
+                transition-duration: 0.4s;
+                width: 36vw;
+                height: 43vh;
+                &:hover {
+                    background-color: #0f1713;
+                    border-radius: 80px;
+                }
             }
             p {
                 color: white;
                 font-family: $thirdFontStack;
                 margin-bottom: 1.5%;
+                font-size: 20px;
             }
             .projectLinksWrapper {
+                margin-top: 1%;
                 width: 29vw;
                 @extend %flexJustifyBetween;
             }
@@ -147,7 +159,7 @@ section.about {
             }
         }
             img {
-                width: 60%;
+                width: 32vw;
             }
         }
 

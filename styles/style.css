@@ -183,18 +183,30 @@ section.projects .projectsContainer {
   display: flex;
   align-items: center;
   height: 80vh;
+  justify-content: center;
 }
 section.projects .projectsContainer .projectWrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin: 2%;
+  transition-duration: 0.4s;
+  width: 36vw;
+  height: 43vh;
+}
+section.projects .projectsContainer .projectWrapper:hover {
+  background-color: #0f1713;
+  border-radius: 80px;
 }
 section.projects .projectsContainer p {
   color: white;
   font-family: "Poppins", Arial, sans-serif;
   margin-bottom: 1.5%;
+  font-size: 20px;
 }
 section.projects .projectsContainer .projectLinksWrapper {
+  margin-top: 1%;
   width: 29vw;
 }
 section.projects .projectsContainer a {
@@ -206,7 +218,7 @@ section.projects .projectsContainer a:hover {
   font-weight: normal;
 }
 section.projects img {
-  width: 60%;
+  width: 32vw;
 }
 
 section.contact {
