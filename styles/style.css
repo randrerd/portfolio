@@ -74,6 +74,62 @@ a.button {
   cursor: default;
 }
 
+/*COLORS*/
+main {
+  background-image: linear-gradient(to bottom, #0f1713 -17%, black 100%);
+}
+
+section.about {
+  background-image: linear-gradient(to right, #c0d8d7 0%, #c0d8d7 100%);
+}
+
+section.about .skillsWrapper .flatBackground:hover {
+  background-image: radial-gradient(#d8e9e9, #c0d8d7);
+}
+
+section.projects {
+  background: black;
+}
+
+section.contact {
+  background-image: linear-gradient(black 0%, #0f1713 130%);
+}
+
+/*BUTTON STYLING*/
+.mainHeaderWrapper .button {
+  padding: 3% 7.5%;
+  background-color: #86CB92;
+  transition-duration: 0.4s;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  font-size: 17px;
+}
+
+.mainHeaderWrapper .button:hover {
+  background-position: right center;
+  background-image: linear-gradient(to right, #86CB92 0%, #6095ac);
+  color: white;
+}
+
+/*POSITIONING*/
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+section.projects .projectsContainer .projectLinksWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.mainHeaderWrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
 nav ul {
   font-family: "Roboto", Arial, sans-serif;
   padding: 1.5% 3%;
@@ -86,28 +142,62 @@ nav ul a:hover {
   color: #c0d8d7;
 }
 
+/*COLORS*/
 main {
-  height: 100vh;
+  background-image: linear-gradient(to bottom, #0f1713 -17%, black 100%);
+}
+
+section.about {
+  background-image: linear-gradient(to right, #c0d8d7 0%, #c0d8d7 100%);
+}
+
+section.about .skillsWrapper .flatBackground:hover {
+  background-image: radial-gradient(#d8e9e9, #c0d8d7);
+}
+
+section.projects {
+  background: black;
+}
+
+section.contact {
+  background-image: linear-gradient(black 0%, #0f1713 130%);
+}
+
+/*BUTTON STYLING*/
+.mainHeaderWrapper .button {
+  padding: 3% 7.5%;
+  background-color: #86CB92;
+  transition-duration: 0.4s;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  font-size: 17px;
+}
+
+.mainHeaderWrapper .button:hover {
+  background-position: right center;
+  background-image: linear-gradient(to right, #86CB92 0%, #6095ac);
+  color: white;
+}
+
+/*POSITIONING*/
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+section.projects .projectsContainer .projectLinksWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 .mainHeaderWrapper {
-  height: 100%;
-  align-items: center;
-  flex-flow: column nowrap;
-  width: fit-content;
-  margin: 0 25vw;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
 }
-.mainHeaderWrapper h1 {
-  font-family: "Tomorrow", Arial, sans-serif;
-  color: #c0d8d7;
-  font-size: 64px;
-  width: 41vw;
-}
-.mainHeaderWrapper .button {
-  align-self: flex-start;
-  margin-top: 1.5%;
-  font-family: "Roboto", Arial, sans-serif;
-}
+
 section.about {
   height: 100vh;
   padding: 1.5%;
@@ -168,6 +258,62 @@ section.about .skillsWrapper .flatBackground img {
   max-width: 7vw;
 }
 
+/*COLORS*/
+main {
+  background-image: linear-gradient(to bottom, #0f1713 -17%, black 100%);
+}
+
+section.about {
+  background-image: linear-gradient(to right, #c0d8d7 0%, #c0d8d7 100%);
+}
+
+section.about .skillsWrapper .flatBackground:hover {
+  background-image: radial-gradient(#d8e9e9, #c0d8d7);
+}
+
+section.projects {
+  background: black;
+}
+
+section.contact {
+  background-image: linear-gradient(black 0%, #0f1713 130%);
+}
+
+/*BUTTON STYLING*/
+.mainHeaderWrapper .button {
+  padding: 3% 7.5%;
+  background-color: #86CB92;
+  transition-duration: 0.4s;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  font-size: 17px;
+}
+
+.mainHeaderWrapper .button:hover {
+  background-position: right center;
+  background-image: linear-gradient(to right, #86CB92 0%, #6095ac);
+  color: white;
+}
+
+/*POSITIONING*/
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+section.projects .projectsContainer .projectLinksWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.mainHeaderWrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
 section.projects {
   height: 100vh;
   padding: 1.5%;
@@ -221,6 +367,62 @@ section.projects img {
   width: 32vw;
 }
 
+/*COLORS*/
+main {
+  background-image: linear-gradient(to bottom, #0f1713 -17%, black 100%);
+}
+
+section.about {
+  background-image: linear-gradient(to right, #c0d8d7 0%, #c0d8d7 100%);
+}
+
+section.about .skillsWrapper .flatBackground:hover {
+  background-image: radial-gradient(#d8e9e9, #c0d8d7);
+}
+
+section.projects {
+  background: black;
+}
+
+section.contact {
+  background-image: linear-gradient(black 0%, #0f1713 130%);
+}
+
+/*BUTTON STYLING*/
+.mainHeaderWrapper .button {
+  padding: 3% 7.5%;
+  background-color: #86CB92;
+  transition-duration: 0.4s;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  font-size: 17px;
+}
+
+.mainHeaderWrapper .button:hover {
+  background-position: right center;
+  background-image: linear-gradient(to right, #86CB92 0%, #6095ac);
+  color: white;
+}
+
+/*POSITIONING*/
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+section.projects .projectsContainer .projectLinksWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.mainHeaderWrapper {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
 section.contact {
   display: flex;
   flex-direction: column;
@@ -243,6 +445,29 @@ section.contact .contactIconsContainer img {
 }
 section.contact .contactIconsContainer a {
   margin: 3%;
+}
+
+main {
+  height: 100vh;
+}
+
+.mainHeaderWrapper {
+  height: 100%;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: fit-content;
+  margin: 0 25vw;
+}
+.mainHeaderWrapper h1 {
+  font-family: "Tomorrow", Arial, sans-serif;
+  color: #c0d8d7;
+  font-size: 64px;
+  width: 41vw;
+}
+.mainHeaderWrapper .button {
+  align-self: flex-start;
+  margin-top: 1.5%;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

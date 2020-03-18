@@ -1,0 +1,26 @@
+@import 'variables';
+
+section.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 15vh;
+    @extend %contactBackgroundColor;
+    h2 {
+        color: $primaryTextColor;
+        font-family: $primaryFontStack;
+        font-size: 38px;
+        margin-bottom: 1%;
+    }
+    .contactIconsContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        img {
+            width: 2vw;
+        }
+        a {
+            margin: 3%;
+        }
+    }
+}

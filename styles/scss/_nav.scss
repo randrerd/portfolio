@@ -1,0 +1,16 @@
+@import 'variables';
+
+nav {
+    ul {
+        @extend %flexJustifyEvenly;
+        font-family: $secondaryFontStack;
+        padding: 1.5% 3%;
+        a {
+            font-weight: 400;
+            color: white;
+            &:hover {
+                color: $primaryTextColor;
+            }
+        }
+    }
+}

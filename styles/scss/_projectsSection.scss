@@ -1,0 +1,56 @@
+@import 'variables';
+
+section.projects {
+    height: 100vh;
+    padding: 1.5%;
+    @extend %projectBackgroundColor;
+    h2 {
+        font-family: $primaryFontStack;
+        color: $primaryTextColor;
+        font-size: 56px;
+        margin-top: 2%;
+        margin-left: 10%;
+    }
+    .projectsContainer {
+        display: flex;
+        align-items: center;
+        height: 80vh;
+        justify-content: center;
+        .projectWrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 2%;
+            transition-duration: 0.4s;
+            width: 36vw;
+            height: 43vh;
+            &:hover {
+                background-color: #0f1713;
+                border-radius: 80px;
+            }
+        }
+        p {
+            color: white;
+            font-family: $thirdFontStack;
+            margin-bottom: 1.5%;
+            font-size: 20px;
+        }
+        .projectLinksWrapper {
+            margin-top: 1%;
+            width: 29vw;
+            @extend %flexJustifyBetween;
+        }
+        a {
+            color: #a7dfdf;
+            font-weight: lighter;
+            font-family: $thirdFontStack;
+            &:hover {
+                font-weight: normal;
+            }
+        }
+    }
+        img {
+            width: 32vw;
+        }
+    }

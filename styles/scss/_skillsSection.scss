@@ -1,0 +1,63 @@
+@import 'variables';
+
+section.about {
+    height: 100vh;
+    @extend %aboutBackgroundColor;
+    padding: 1.5%;
+    h2 {
+        font-family: $primaryFontStack;
+        color: $secondaryTextColor;
+        font-size: 56px;
+        margin-top: 2%;
+        margin-left: 10%;
+    }
+    .skillsContainer {
+        display: flex;
+        justify-content: center;
+        flex-flow: row nowrap;
+        margin: 5%;
+    }
+    .skillsWrapper {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        margin: 2.5%;
+        p {
+            font-family: $thirdFontStack;
+            color: $aboutSectionSecondaryColor;
+            text-align: center;
+            margin-top: 2.5%;
+            width: 15vw;
+            font-size: 24px;
+        }
+        .flatBackground {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 3%;
+            width: 15vw;
+            max-width: 15vw;
+            min-height: 33vh;
+            transition-duration: 0.3s;
+            border-radius: 65px;
+            border: 2px solid $aboutSectionSecondaryColor;
+            margin: 1.5%;
+            &:hover {
+                @extend %skillsWrapperColorHover;
+                border-radius: 80px;
+            }
+            img.multipleitems {
+                width: 6vw;
+                max-width: 6vw;
+                max-height: 98px;
+            }
+            img {
+                width: 7vw; 
+                max-height: 98px;
+                height: auto;
+                max-width: 7vw;
+            }
+        }
+        }
+    }
