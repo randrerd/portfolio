@@ -83,6 +83,7 @@ section.projects {
         @include responsive(phone) {
             h2 {
                 margin-left: 7.5%;
+                margin-bottom: 3%;
             }
             .projectsContainer {
                 flex-flow: column nowrap;

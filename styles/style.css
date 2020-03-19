@@ -490,6 +490,7 @@ section.projects img {
 @media only screen and (max-width: 600px) {
   section.projects h2 {
     margin-left: 7.5%;
+    margin-bottom: 3%;
   }
   section.projects .projectsContainer {
     flex-flow: column nowrap;
