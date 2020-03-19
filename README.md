@@ -1,0 +1,2 @@
+This is my first personal portfolio, I only used HTML, CSS and SASS as the CSS preprocessor. <br>
+I plan to update it with more functionality and dynamic stylings as I continue to start learning JavaScript and its frameworks, I also plan to add the personal projects I'll work on in the future.
