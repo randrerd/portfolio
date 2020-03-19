@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'reset';
+@import 'mediaQueries';
 @import 'nav';
 @import 'skillsSection';
 @import 'projectsSection';
@@ -8,11 +9,52 @@
 
 html {
     font-size: 62.5%;
+
+    @include responsive(tab-land) {
+        font-size: 56.25%;
+    }
+
+    @include responsive(tab-port) {
+        font-size: 50%;
+    }
+
+    @include responsive(phone) {
+        font-size: 43.75%;
+    }
+
+    @include responsive(big-desktop) {
+        font-size: 75%;
+}
+
+body {
+    @include responsive(phone) {
+        max-width: 600px;
+        width: 100%;
+    }
+}
 }
 
 main {
     height: 100vh;
     @extend %mainBackgroundColor;
+
+    @include responsive(tab-land) {
+
+    }
+
+    @include responsive(tab-port){
+
+    }
+
+    @include responsive(phone) {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    @include responsive(big-desktop) {
+
+    }
 }
 
 .mainHeaderWrapper {
@@ -31,11 +73,45 @@ main {
     .button {
         @extend %mainButtonStyle;
         align-self: flex-start;
-        margin-top: 1rem;
+        margin-top: 1.8rem;
         font-family: $secondaryFontStack;
+        @include responsive(phone){
+            padding: 8% 13%;
+            margin-top: 0;           
+            align-self: center;
+                }
         &:hover {
             @extend %mainButtonBackgroundColorHover;
         }
         }
+        @include responsive(tab-land) {
+            margin: 0 24rem;
+            height: 80vh;
 
+        }
+    
+        @include responsive(tab-port){
+            margin: 0 10rem 0 15rem;
+            h1 {
+                width: 65vw;
+                margin-bottom: 3rem;
+            }
+        }
+    
+        @include responsive(phone) {
+            margin-left: 0;
+            margin-right: 0;
+            height: 100vh;
+            width: 100vw;
+            justify-content: space-evenly;
+            h1 {
+                margin: 0 2rem;
+                width: 95vw;
+                text-align: center;
+            }
+        }
+    
+        @include responsive(big-desktop) {
+    
+        }
     }

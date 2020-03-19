@@ -1,8 +1,13 @@
 @import 'variables';
 
 nav {
+    label {
+        display: none;
+    }
     ul {
-        @extend %flexJustifyEvenly;
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: row wrap;
         font-family: $secondaryFontStack;
         padding: 2.5rem 2rem;
         a {
@@ -12,6 +17,60 @@ nav {
             &:hover {
                 color: $primaryTextColor;
             }
+            @include responsive(phone) {
+                color: black;
+                font-size: 4rem;
+                &:visited {
+                    color: black;
+                }
+            }
         }
+        @include responsive(phone) {
+            display: none;
+            flex-direction: column;
+           }
+        li {
+            @include responsive(phone) {
+                margin: 0 2rem 2rem 2rem;
+                
+            }
+        }
+    }
+    .menuIcon {
+        @include responsive(phone) {
+            display: block;
+            width: 2.5rem;
+            padding: 3rem 3rem 0 0;
+        }
+    }
+    .dropdown:checked ~ ul {
+        @include responsive(phone) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $primaryButtonColor;
+        position: absolute;
+        margin: 6.5rem 0 0 0;
+        height: 41vh;
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    }
+    .dropdown:checked ~ .menuIcon {
+        @include responsive(phone) {
+        display: none;
+    }
+    }
+    .dropdown:checked ~ .xIcon {
+        @include responsive(phone) {
+            display: block;
+            width: 2.5rem;
+            padding: 3rem 3rem 0 0;
+        }
+    }
+    @include responsive(phone) {
+        display: flex;
+        justify-content: flex-end;
     }
 }

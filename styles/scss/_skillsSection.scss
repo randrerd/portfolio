@@ -10,12 +10,75 @@ section.about {
         font-size: 5.6rem;
         margin-top: 2rem;
         margin-left: 18rem;
+        @include responsive(phone){
+            margin-left: 7.5%;
+        }
     }
     .skillsContainer {
         display: flex;
         justify-content: center;
         flex-flow: row nowrap;
-        margin: 7rem;
+        margin: 4.5rem 10rem;
+
+        @include responsive(tab-land) {
+            flex-wrap: wrap;
+            .skillsWrapper {
+                margin: 2.5rem;
+            p {
+                    margin-top: 0;
+                    width: 28vw;
+                }
+
+            .flatBackground {
+                min-height: 20vh;
+            }
+        }
+
+        }
+    
+        @include responsive(tab-port){
+            flex-wrap: wrap;
+            .skillsWrapper {
+                margin: 2.5rem;
+            p {
+                    margin-top: 0;
+                    width: 28vw;
+                }
+
+            .flatBackground {
+                min-height: 23vh;
+                min-width: 25vw;
+                img {
+                    width: 12vw;
+                    max-width: 12vw;
+                }
+                img.multipleitems {
+                    width: 10vw;
+                    max-width: 10vw;
+                }
+            }
+        }
+        }
+    
+        @include responsive(phone) {
+            margin: 0;
+            margin-top: 10%;
+            min-width: 50vw;
+            .skillsWrapper{
+                margin: 2% 2% 18.5%;
+                padding: 0;
+
+            .flatBackground {
+                min-height: 12vh;
+                width: 24vw;
+                max-width: 24vw;
+            }
+        }
+        }
+    
+        @include responsive(big-desktop) {
+            
+        }
     }
     .skillsWrapper {
         display: flex;
@@ -26,7 +89,7 @@ section.about {
             font-family: $thirdFontStack;
             color: $aboutSectionSecondaryColor;
             text-align: center;
-            margin-top: 1.75rem;
+            margin-top: 0.8rem;
             width: 15vw;
             font-size: 2.4rem;
         }

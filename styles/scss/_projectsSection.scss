@@ -8,8 +8,10 @@ section.projects {
         font-family: $primaryFontStack;
         color: $primaryTextColor;
         font-size: 5.6rem;
-        margin-top: 2.3rem;
-        margin-left: 18rem;
+        margin: 2.3rem 0 0 18rem;
+        @include responsive(phone) {
+            margin-left: 12rem;
+        }
     }
     .projectsContainer {
         display: flex;
@@ -28,6 +30,7 @@ section.projects {
             &:hover {
                 background-color: #0f1713;
                 border-radius: 8.0rem;
+                height: 60%;
             }
         }
         p {
@@ -54,4 +57,59 @@ section.projects {
         img {
             width: 32vw;
         }
+        
+        @include responsive(tab-land) {
+            .projectsContainer {
+                p {
+                    font-size: 3rem;
+                    text-align: center;
+                }
+                a {
+                    font-size: 2.5rem;
+                }
+
+                .projectWrapper {
+                    width: 39vw;
+                    height: 30vh;
+                }
+            }
+
+        }
+        
+        
+        @include responsive(tab-port) {
+        }
+        
+        @include responsive(phone) {
+            h2 {
+                margin-left: 7.5%;
+            }
+            .projectsContainer {
+                flex-flow: column nowrap;
+                p {
+                    font-size: 3rem;
+                    text-align: center;
+                }
+                a {
+                    font-size: 2.5rem;
+                }
+                .projectWrapper {
+                    width: 80vw;
+                    height: 26vh;
+                    margin: 14.5% 0;
+                    &:hover {
+                        height: 44%;
+                        width: 93vw;
+                    }
+                    img {
+                        width: 80vw;
+                        max-width: 80vw;
+                    }
+                    .projectLinksWrapper {
+                        width: 79vw;
+                    }
+                }
+            }
+        }
+        
     }

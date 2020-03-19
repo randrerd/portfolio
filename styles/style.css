@@ -21,7 +21,7 @@ section.contact {
 
 /*BUTTON STYLING*/
 .mainHeaderWrapper .button {
-  padding: 3% 7.5%;
+  padding: 4.5% 8.5%;
   background-color: #86CB92;
   transition-duration: 0.4s;
   font-weight: 900;
@@ -36,12 +36,6 @@ section.contact {
 }
 
 /*POSITIONING*/
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: row wrap;
-}
-
 section.projects .projectsContainer .projectLinksWrapper {
   display: flex;
   justify-content: space-between;
@@ -97,7 +91,7 @@ section.contact {
 
 /*BUTTON STYLING*/
 .mainHeaderWrapper .button {
-  padding: 3% 7.5%;
+  padding: 4.5% 8.5%;
   background-color: #86CB92;
   transition-duration: 0.4s;
   font-weight: 900;
@@ -112,12 +106,6 @@ section.contact {
 }
 
 /*POSITIONING*/
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: row wrap;
-}
-
 section.projects .projectsContainer .projectLinksWrapper {
   display: flex;
   justify-content: space-between;
@@ -130,7 +118,13 @@ section.projects .projectsContainer .projectLinksWrapper {
   flex-flow: row wrap;
 }
 
+nav label {
+  display: none;
+}
 nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
   font-family: "Roboto", Arial, sans-serif;
   padding: 2.5rem 2rem;
 }
@@ -141,6 +135,65 @@ nav ul a {
 }
 nav ul a:hover {
   color: #c0d8d7;
+}
+@media only screen and (max-width: 600px) {
+  nav ul a {
+    color: black;
+    font-size: 4rem;
+  }
+  nav ul a:visited {
+    color: black;
+  }
+}
+@media only screen and (max-width: 600px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  nav ul li {
+    margin: 0 2rem 2rem 2rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  nav .menuIcon {
+    display: block;
+    width: 2.5rem;
+    padding: 3rem 3rem 0 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  nav .dropdown:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #86CB92;
+    position: absolute;
+    margin: 6.5rem 0 0 0;
+    height: 41vh;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  nav .dropdown:checked ~ .menuIcon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  nav .dropdown:checked ~ .xIcon {
+    display: block;
+    width: 2.5rem;
+    padding: 3rem 3rem 0 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 /*COLORS*/
@@ -166,7 +219,7 @@ section.contact {
 
 /*BUTTON STYLING*/
 .mainHeaderWrapper .button {
-  padding: 3% 7.5%;
+  padding: 4.5% 8.5%;
   background-color: #86CB92;
   transition-duration: 0.4s;
   font-weight: 900;
@@ -181,12 +234,6 @@ section.contact {
 }
 
 /*POSITIONING*/
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: row wrap;
-}
-
 section.projects .projectsContainer .projectLinksWrapper {
   display: flex;
   justify-content: space-between;
@@ -210,11 +257,71 @@ section.about h2 {
   margin-top: 2rem;
   margin-left: 18rem;
 }
+@media only screen and (max-width: 600px) {
+  section.about h2 {
+    margin-left: 7.5%;
+  }
+}
 section.about .skillsContainer {
   display: flex;
   justify-content: center;
   flex-flow: row nowrap;
-  margin: 7rem;
+  margin: 4.5rem 10rem;
+}
+@media only screen and (max-width: 1400px) {
+  section.about .skillsContainer {
+    flex-wrap: wrap;
+  }
+  section.about .skillsContainer .skillsWrapper {
+    margin: 2.5rem;
+  }
+  section.about .skillsContainer .skillsWrapper p {
+    margin-top: 0;
+    width: 28vw;
+  }
+  section.about .skillsContainer .skillsWrapper .flatBackground {
+    min-height: 20vh;
+  }
+}
+@media only screen and (max-width: 900px) {
+  section.about .skillsContainer {
+    flex-wrap: wrap;
+  }
+  section.about .skillsContainer .skillsWrapper {
+    margin: 2.5rem;
+  }
+  section.about .skillsContainer .skillsWrapper p {
+    margin-top: 0;
+    width: 28vw;
+  }
+  section.about .skillsContainer .skillsWrapper .flatBackground {
+    min-height: 23vh;
+    min-width: 25vw;
+  }
+  section.about .skillsContainer .skillsWrapper .flatBackground img {
+    width: 12vw;
+    max-width: 12vw;
+  }
+  section.about .skillsContainer .skillsWrapper .flatBackground img.multipleitems {
+    width: 10vw;
+    max-width: 10vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section.about .skillsContainer {
+    margin: 0;
+    margin-top: 10%;
+    min-width: 50vw;
+  }
+  section.about .skillsContainer .skillsWrapper {
+    margin: 2% 2% 18.5%;
+    padding: 0;
+  }
+  section.about .skillsContainer .skillsWrapper .flatBackground {
+    min-height: 12vh;
+    width: 24vw;
+    max-width: 24vw;
+  }
 }
 section.about .skillsWrapper {
   display: flex;
@@ -226,7 +333,7 @@ section.about .skillsWrapper p {
   font-family: "Poppins", Arial, sans-serif;
   color: #252423;
   text-align: center;
-  margin-top: 1.75rem;
+  margin-top: 0.8rem;
   width: 15vw;
   font-size: 2.4rem;
 }
@@ -282,7 +389,7 @@ section.contact {
 
 /*BUTTON STYLING*/
 .mainHeaderWrapper .button {
-  padding: 3% 7.5%;
+  padding: 4.5% 8.5%;
   background-color: #86CB92;
   transition-duration: 0.4s;
   font-weight: 900;
@@ -297,12 +404,6 @@ section.contact {
 }
 
 /*POSITIONING*/
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: row wrap;
-}
-
 section.projects .projectsContainer .projectLinksWrapper {
   display: flex;
   justify-content: space-between;
@@ -323,8 +424,12 @@ section.projects h2 {
   font-family: "Tomorrow", Arial, sans-serif;
   color: #c0d8d7;
   font-size: 5.6rem;
-  margin-top: 2.3rem;
-  margin-left: 18rem;
+  margin: 2.3rem 0 0 18rem;
+}
+@media only screen and (max-width: 600px) {
+  section.projects h2 {
+    margin-left: 12rem;
+  }
 }
 section.projects .projectsContainer {
   display: flex;
@@ -345,6 +450,7 @@ section.projects .projectsContainer .projectWrapper {
 section.projects .projectsContainer .projectWrapper:hover {
   background-color: #0f1713;
   border-radius: 8rem;
+  height: 60%;
 }
 section.projects .projectsContainer p {
   color: white;
@@ -367,6 +473,50 @@ section.projects .projectsContainer a:hover {
 }
 section.projects img {
   width: 32vw;
+}
+@media only screen and (max-width: 1400px) {
+  section.projects .projectsContainer p {
+    font-size: 3rem;
+    text-align: center;
+  }
+  section.projects .projectsContainer a {
+    font-size: 2.5rem;
+  }
+  section.projects .projectsContainer .projectWrapper {
+    width: 39vw;
+    height: 30vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section.projects h2 {
+    margin-left: 7.5%;
+  }
+  section.projects .projectsContainer {
+    flex-flow: column nowrap;
+  }
+  section.projects .projectsContainer p {
+    font-size: 3rem;
+    text-align: center;
+  }
+  section.projects .projectsContainer a {
+    font-size: 2.5rem;
+  }
+  section.projects .projectsContainer .projectWrapper {
+    width: 80vw;
+    height: 26vh;
+    margin: 14.5% 0;
+  }
+  section.projects .projectsContainer .projectWrapper:hover {
+    height: 44%;
+    width: 93vw;
+  }
+  section.projects .projectsContainer .projectWrapper img {
+    width: 80vw;
+    max-width: 80vw;
+  }
+  section.projects .projectsContainer .projectWrapper .projectLinksWrapper {
+    width: 79vw;
+  }
 }
 
 /*COLORS*/
@@ -392,7 +542,7 @@ section.contact {
 
 /*BUTTON STYLING*/
 .mainHeaderWrapper .button {
-  padding: 3% 7.5%;
+  padding: 4.5% 8.5%;
   background-color: #86CB92;
   transition-duration: 0.4s;
   font-weight: 900;
@@ -407,12 +557,6 @@ section.contact {
 }
 
 /*POSITIONING*/
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: row wrap;
-}
-
 section.projects .projectsContainer .projectLinksWrapper {
   display: flex;
   justify-content: space-between;
@@ -448,15 +592,64 @@ section.contact .contactIconsContainer img {
 section.contact .contactIconsContainer a {
   margin: 0 0.35rem;
 }
+@media only screen and (max-width: 1400px) {
+  section.contact h2 {
+    font-size: 4.8rem;
+  }
+  section.contact .contactIconsContainer img {
+    width: 4vw;
+    height: 5vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  section.contact h2 {
+    font-size: 4.8rem;
+  }
+  section.contact .contactIconsContainer img {
+    width: 9vw;
+    height: 5vh;
+  }
+}
 
 html {
   font-size: 62.5%;
+}
+@media only screen and (max-width: 1400px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 43.75%;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  html {
+    font-size: 75%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html body {
+    max-width: 600px;
+    width: 100%;
+  }
 }
 
 main {
   height: 100vh;
 }
-
+@media only screen and (max-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .mainHeaderWrapper {
   height: 100%;
   align-items: center;
@@ -472,8 +665,44 @@ main {
 }
 .mainHeaderWrapper .button {
   align-self: flex-start;
-  margin-top: 1rem;
+  margin-top: 1.8rem;
   font-family: "Roboto", Arial, sans-serif;
+}
+@media only screen and (max-width: 600px) {
+  .mainHeaderWrapper .button {
+    padding: 8% 13%;
+    margin-top: 0;
+    align-self: center;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .mainHeaderWrapper {
+    margin: 0 24rem;
+    height: 80vh;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .mainHeaderWrapper {
+    margin: 0 10rem 0 15rem;
+  }
+  .mainHeaderWrapper h1 {
+    width: 65vw;
+    margin-bottom: 3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .mainHeaderWrapper {
+    margin-left: 0;
+    margin-right: 0;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-evenly;
+  }
+  .mainHeaderWrapper h1 {
+    margin: 0 2rem;
+    width: 95vw;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
