@@ -4,29 +4,34 @@ $secondaryFontStack: 'Roboto', Arial, sans-serif;
 $thirdFontStack: 'Poppins', Arial, sans-serif;
 
 /*COLORS*/
-$primaryTextColor: #c0d8d7;
-$secondaryTextColor: rgb(22, 22, 22);
-$primaryButtonColor: #86CB92;
+$primaryTextColor: white;
+$secondaryTextColor: #111626;
+$primaryButtonColor: #F21628;
 $aboutSectionSecondaryColor: #252423;
+$primaryBackgroundColor: #111626;
+$secondaryBackgroundColor: white;
+$thirdBackgroundColor: #F21628;
+$projectHoverBackgroundColor: #0b0e18;
+
 %mainBackgroundColor {
-    background-image: linear-gradient(to bottom, #0f1713 -17%, black 100%);    
+    background-image: linear-gradient(to bottom, $primaryBackgroundColor -17%, $primaryBackgroundColor 100%);    
 }
 %aboutBackgroundColor {
-    background-image: linear-gradient(to right, #c0d8d7 0%, #c0d8d7 100%);
+    background-color: $secondaryBackgroundColor;
 }
 %skillsWrapperColor {
-    background-image: radial-gradient(rgb(145, 115, 78), #BF9F78)
+        background-color: $thirdBackgroundColor;
 }
 %skillsWrapperColorHover {
-    background-image: radial-gradient(#d8e9e9, #c0d8d7)
+    background-image: radial-gradient( rgb(175, 7, 38) ,#BF0426 )
 }
 
 %projectBackgroundColor {
-    background: black;
+    background-color: $primaryBackgroundColor;
 }
 
 %contactBackgroundColor {
-    background-image: linear-gradient(black 0%, #0f1713 130%);
+    background-color: $primaryBackgroundColor;
 }
 
 
@@ -39,11 +44,12 @@ $aboutSectionSecondaryColor: #252423;
     font-weight: 900;
     letter-spacing: 0.15em;
     font-size: 17px;
+    border-radius: 20px;
 }
 
 %mainButtonBackgroundColorHover {
     background-position: right center; 
-    background-image: linear-gradient(to right, $primaryButtonColor 0%, rgb(96, 149, 172));
+    background-image: linear-gradient(to right, $primaryButtonColor 0%, rgb(148, 16, 27));
     color: white;
 }
 

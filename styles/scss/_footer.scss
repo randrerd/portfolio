@@ -16,8 +16,9 @@ section.contact {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        img {
-            width: 2vw;
+        .iconify {
+           font-size: 4rem;
+           color: $primaryButtonColor;
         }
         a {
         margin: 0 0.35rem;

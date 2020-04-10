@@ -104,23 +104,26 @@ section.about {
             min-height: 33vh;
             transition-duration: 0.3s;
             border-radius: 6.5rem;
-            border: 0.185rem solid $aboutSectionSecondaryColor;
             margin: 1rem;
+            @extend %skillsWrapperColor;
+            box-shadow: (1px 4px 3px grey);
             &:hover {
                 @extend %skillsWrapperColorHover;
                 border-radius: 8.0rem;
             }
-            img.multipleitems {
-                width: 6vw;
-                max-width: 6vw;
-                max-height: 10rem;
+            .multipleitems {
+                font-size: 80em;
             }
-            img {
-                width: 7vw; 
-                max-height: 10rem;
-                height: auto;
+            .iconify {
+                font-size: 92em;
+                max-height: 18vh;
                 max-width: 7vw;
+                color: white;
             }
+        }
+
+        .gitAgile {
+            flex-direction: column;
         }
         }
     }

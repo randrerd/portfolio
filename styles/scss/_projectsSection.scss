@@ -28,7 +28,7 @@ section.projects {
             width: 36vw;
             height: 43vh;
             &:hover {
-                background-color: #0f1713;
+                background-color: $projectHoverBackgroundColor;
                 border-radius: 8.0rem;
                 height: 60%;
             }
@@ -45,7 +45,7 @@ section.projects {
             @extend %flexJustifyBetween;
         }
         a {
-            color: #a7dfdf;
+            color: $primaryButtonColor;
             font-weight: lighter;
             font-family: $thirdFontStack;
             font-size: 1.5rem;
