@@ -300,6 +300,17 @@ section.about .skillsContainer {
   section.about .skillsContainer .skillsWrapper .flatBackground {
     min-height: 20vh;
   }
+  section.about .skillsContainer .skillsWrapper .flatBackground .iconify {
+    font-size: 9rem;
+    max-width: initial;
+    max-height: initial;
+  }
+  section.about .skillsContainer .skillsWrapper .flatBackground .multipleitems {
+    width: 7vw;
+    font-size: 8rem;
+    max-width: initial;
+    max-height: initial;
+  }
 }
 @media only screen and (max-width: 900px) {
   section.about .skillsContainer {
@@ -316,13 +327,16 @@ section.about .skillsContainer {
     min-height: 23vh;
     min-width: 25vw;
   }
-  section.about .skillsContainer .skillsWrapper .flatBackground img {
-    width: 12vw;
-    max-width: 12vw;
+  section.about .skillsContainer .skillsWrapper .flatBackground .iconify {
+    font-size: 15rem;
+    max-width: initial;
+    max-height: initial;
   }
-  section.about .skillsContainer .skillsWrapper .flatBackground img.multipleitems {
-    width: 10vw;
-    max-width: 10vw;
+  section.about .skillsContainer .skillsWrapper .flatBackground .multipleitems {
+    width: 12vw;
+    font-size: 12rem;
+    max-width: initial;
+    max-height: initial;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -339,6 +353,17 @@ section.about .skillsContainer {
     min-height: 12vh;
     width: 24vw;
     max-width: 24vw;
+  }
+  section.about .skillsContainer .skillsWrapper .flatBackground .iconify {
+    font-size: 9rem;
+    max-width: initial;
+    max-height: initial;
+  }
+  section.about .skillsContainer .skillsWrapper .flatBackground .multipleitems {
+    width: 12vw;
+    font-size: 6rem;
+    max-width: initial;
+    max-height: initial;
   }
 }
 section.about .skillsWrapper {
