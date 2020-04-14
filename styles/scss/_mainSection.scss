@@ -1,0 +1,25 @@
+@import 'config';
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    .mainHeaderWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        position: relative;
+        bottom: 5%;
+    
+    h1 {
+        font-family: $primaryFontStack;
+        color: $primaryTextColor;
+        font-size: 5rem;
+    }
+    .button {
+        @extend %mainButtonStyle;
+    }
+}
+}

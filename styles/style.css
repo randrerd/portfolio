@@ -24,8 +24,9 @@ section.contact {
 }
 
 /*BUTTON STYLING*/
-.mainHeaderWrapper .button {
-  padding: 4.5% 8.5%;
+main .mainHeaderWrapper .button {
+  padding: 5%;
+  margin: 2.5%;
   background-color: #F21628;
   transition-duration: 0.4s;
   font-weight: 900;
@@ -33,24 +34,17 @@ section.contact {
   font-size: 17px;
   border-radius: 20px;
   color: white;
+  font-family: "Roboto", Arial, sans-serif;
 }
-
-.mainHeaderWrapper .button:hover {
+main .mainHeaderWrapper .button:hover {
   background-position: right center;
   background-image: linear-gradient(to right, #F21628 0%, #94101b);
-  color: white;
 }
 
 /*POSITIONING*/
 section.projects .projectsContainer .projectLinksWrapper {
   display: flex;
   justify-content: space-between;
-  flex-flow: row wrap;
-}
-
-.mainHeaderWrapper {
-  display: flex;
-  justify-content: center;
   flex-flow: row wrap;
 }
 
@@ -62,10 +56,6 @@ section.projects .projectsContainer .projectLinksWrapper {
   text-decoration: none;
   list-style: none;
   font-weight: normal;
-}
-
-a {
-  color: black;
 }
 
 img {
@@ -103,8 +93,9 @@ section.contact {
 }
 
 /*BUTTON STYLING*/
-.mainHeaderWrapper .button {
-  padding: 4.5% 8.5%;
+main .mainHeaderWrapper .button {
+  padding: 5%;
+  margin: 2.5%;
   background-color: #F21628;
   transition-duration: 0.4s;
   font-weight: 900;
@@ -112,12 +103,11 @@ section.contact {
   font-size: 17px;
   border-radius: 20px;
   color: white;
+  font-family: "Roboto", Arial, sans-serif;
 }
-
-.mainHeaderWrapper .button:hover {
+main .mainHeaderWrapper .button:hover {
   background-position: right center;
   background-image: linear-gradient(to right, #F21628 0%, #94101b);
-  color: white;
 }
 
 /*POSITIONING*/
@@ -127,88 +117,100 @@ section.projects .projectsContainer .projectLinksWrapper {
   flex-flow: row wrap;
 }
 
-.mainHeaderWrapper {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger {
+  padding: 8px 8px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #F21628;
 }
 
-nav label {
-  display: none;
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
 }
-nav ul {
-  display: flex;
-  justify-content: space-evenly;
-  flex-flow: row wrap;
-  font-family: "Roboto", Arial, sans-serif;
-  padding: 2.5rem 2rem;
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
 }
-nav ul a {
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: white;
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 40px;
+  height: 4px;
+  background-color: #F21628;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
 }
-nav ul a:hover {
-  color: white;
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
 }
-@media only screen and (max-width: 600px) {
-  nav ul a {
-    color: black;
-    font-size: 4rem;
-  }
-  nav ul a:visited {
-    color: black;
-  }
+.hamburger-inner::before {
+  top: -10px;
 }
-@media only screen and (max-width: 600px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-  }
+.hamburger-inner::after {
+  bottom: -10px;
 }
-@media only screen and (max-width: 600px) {
-  nav ul li {
-    margin: 0 2rem 2rem 2rem;
-  }
+
+/*
+ * Elastic
+ */
+.hamburger--elastic .hamburger-inner {
+  top: 2px;
+  transition-duration: 0.275s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-@media only screen and (max-width: 600px) {
-  nav .menuIcon {
-    display: block;
-    width: 2.5rem;
-    padding: 3rem 3rem 0 0;
-  }
+.hamburger--elastic .hamburger-inner::before {
+  top: 10px;
+  transition: opacity 0.125s 0.275s ease;
 }
-@media only screen and (max-width: 600px) {
-  nav .dropdown:checked ~ ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #F21628;
-    position: absolute;
-    margin: 6.5rem 0 0 0;
-    height: 41vh;
-    width: 100%;
-    padding: 0;
-    text-align: center;
-  }
+.hamburger--elastic .hamburger-inner::after {
+  top: 20px;
+  transition: transform 0.275s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-@media only screen and (max-width: 600px) {
-  nav .dropdown:checked ~ .menuIcon {
-    display: none;
-  }
+.hamburger--elastic.is-active .hamburger-inner {
+  transform: translate3d(0, 10px, 0) rotate(135deg);
+  transition-delay: 0.075s;
 }
-@media only screen and (max-width: 600px) {
-  nav .dropdown:checked ~ .xIcon {
-    display: block;
-    width: 2.5rem;
-    padding: 3rem 3rem 0 0;
-  }
+.hamburger--elastic.is-active .hamburger-inner::before {
+  transition-delay: 0s;
+  opacity: 0;
 }
-@media only screen and (max-width: 600px) {
-  nav {
-    display: flex;
-    justify-content: flex-end;
-  }
+.hamburger--elastic.is-active .hamburger-inner::after {
+  transform: translate3d(0, -20px, 0) rotate(-270deg);
+  transition-delay: 0.075s;
 }
 
 /*COLORS*/
@@ -237,8 +239,9 @@ section.contact {
 }
 
 /*BUTTON STYLING*/
-.mainHeaderWrapper .button {
-  padding: 4.5% 8.5%;
+main .mainHeaderWrapper .button {
+  padding: 5%;
+  margin: 2.5%;
   background-color: #F21628;
   transition-duration: 0.4s;
   font-weight: 900;
@@ -246,12 +249,11 @@ section.contact {
   font-size: 17px;
   border-radius: 20px;
   color: white;
+  font-family: "Roboto", Arial, sans-serif;
 }
-
-.mainHeaderWrapper .button:hover {
+main .mainHeaderWrapper .button:hover {
   background-position: right center;
   background-image: linear-gradient(to right, #F21628 0%, #94101b);
-  color: white;
 }
 
 /*POSITIONING*/
@@ -261,9 +263,169 @@ section.projects .projectsContainer .projectLinksWrapper {
   flex-flow: row wrap;
 }
 
-.mainHeaderWrapper {
+main {
+  height: 100vh;
+}
+main nav {
+  height: 10%;
   display: flex;
+  flex-direction: column;
+}
+main nav .hamburger {
+  padding: 5%;
+  align-self: center;
+  margin-left: auto;
+}
+main nav .hamburger-inner,
+main nav .hamburger-inner::before,
+main nav .hamburger-inner::after {
+  width: 30px;
+}
+main nav ul {
+  flex-direction: column;
   justify-content: center;
+  position: absolute;
+  top: -250px;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  padding: 20px;
+  transition: top 400ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  background-color: #F21628;
+  z-index: 2;
+  text-align: center;
+  padding: 13% 0;
+}
+main nav #navLinks.mobile {
+  top: 7.5%;
+}
+main nav li {
+  font-size: 4em;
+  font-family: "Roboto", Arial, sans-serif;
+}
+main nav li a {
+  color: white;
+}
+
+/*COLORS*/
+main {
+  background-image: linear-gradient(to bottom, #111626 -17%, #111626 100%);
+}
+
+section.about {
+  background-color: white;
+}
+
+section.about .skillsWrapper .flatBackground {
+  background-color: #F21628;
+}
+
+section.about .skillsWrapper .flatBackground:hover {
+  background-image: radial-gradient(#af0726, #BF0426);
+}
+
+section.projects {
+  background-color: #111626;
+}
+
+section.contact {
+  background-color: #111626;
+}
+
+/*BUTTON STYLING*/
+main .mainHeaderWrapper .button {
+  padding: 5%;
+  margin: 2.5%;
+  background-color: #F21628;
+  transition-duration: 0.4s;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  font-size: 17px;
+  border-radius: 20px;
+  color: white;
+  font-family: "Roboto", Arial, sans-serif;
+}
+main .mainHeaderWrapper .button:hover {
+  background-position: right center;
+  background-image: linear-gradient(to right, #F21628 0%, #94101b);
+}
+
+/*POSITIONING*/
+section.projects .projectsContainer .projectLinksWrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main .mainHeaderWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  bottom: 5%;
+}
+main .mainHeaderWrapper h1 {
+  font-family: "Tomorrow", Arial, sans-serif;
+  color: white;
+  font-size: 5rem;
+}
+/*COLORS*/
+main {
+  background-image: linear-gradient(to bottom, #111626 -17%, #111626 100%);
+}
+
+section.about {
+  background-color: white;
+}
+
+section.about .skillsWrapper .flatBackground {
+  background-color: #F21628;
+}
+
+section.about .skillsWrapper .flatBackground:hover {
+  background-image: radial-gradient(#af0726, #BF0426);
+}
+
+section.projects {
+  background-color: #111626;
+}
+
+section.contact {
+  background-color: #111626;
+}
+
+/*BUTTON STYLING*/
+main .mainHeaderWrapper .button {
+  padding: 5%;
+  margin: 2.5%;
+  background-color: #F21628;
+  transition-duration: 0.4s;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+  font-size: 17px;
+  border-radius: 20px;
+  color: white;
+  font-family: "Roboto", Arial, sans-serif;
+}
+main .mainHeaderWrapper .button:hover {
+  background-position: right center;
+  background-image: linear-gradient(to right, #F21628 0%, #94101b);
+}
+
+/*POSITIONING*/
+section.projects .projectsContainer .projectLinksWrapper {
+  display: flex;
+  justify-content: space-between;
   flex-flow: row wrap;
 }
 
@@ -278,109 +440,24 @@ section.about h2 {
   margin-top: 2rem;
   margin-left: 18rem;
 }
-@media only screen and (max-width: 600px) {
-  section.about h2 {
-    margin-left: 7.5%;
-  }
-}
 section.about .skillsContainer {
   display: flex;
   justify-content: center;
   flex-flow: row nowrap;
-  margin: 4.5rem 10rem;
-}
-@media only screen and (max-width: 1400px) {
-  section.about .skillsContainer {
-    flex-wrap: wrap;
-  }
-  section.about .skillsContainer .skillsWrapper {
-    margin: 2.5rem;
-  }
-  section.about .skillsContainer .skillsWrapper p {
-    margin-top: 0;
-    width: 28vw;
-  }
-  section.about .skillsContainer .skillsWrapper .flatBackground {
-    min-height: 20vh;
-  }
-  section.about .skillsContainer .skillsWrapper .flatBackground .iconify {
-    font-size: 9rem;
-    max-width: initial;
-    max-height: initial;
-  }
-  section.about .skillsContainer .skillsWrapper .flatBackground .multipleitems {
-    width: 7vw;
-    font-size: 8rem;
-    max-width: initial;
-    max-height: initial;
-  }
-}
-@media only screen and (max-width: 900px) {
-  section.about .skillsContainer {
-    flex-wrap: wrap;
-  }
-  section.about .skillsContainer .skillsWrapper {
-    margin: 2.5rem;
-  }
-  section.about .skillsContainer .skillsWrapper p {
-    margin-top: 0;
-    width: 28vw;
-  }
-  section.about .skillsContainer .skillsWrapper .flatBackground {
-    min-height: 23vh;
-    min-width: 25vw;
-  }
-  section.about .skillsContainer .skillsWrapper .flatBackground .iconify {
-    font-size: 15rem;
-    max-width: initial;
-    max-height: initial;
-  }
-  section.about .skillsContainer .skillsWrapper .flatBackground .multipleitems {
-    width: 12vw;
-    font-size: 12rem;
-    max-width: initial;
-    max-height: initial;
-  }
-}
-@media only screen and (max-width: 600px) {
-  section.about .skillsContainer {
-    margin: 0;
-    margin-top: 10%;
-    min-width: 50vw;
-  }
-  section.about .skillsContainer .skillsWrapper {
-    margin: 2% 2% 18.5%;
-    padding: 0;
-  }
-  section.about .skillsContainer .skillsWrapper .flatBackground {
-    min-height: 12vh;
-    width: 24vw;
-    max-width: 24vw;
-  }
-  section.about .skillsContainer .skillsWrapper .flatBackground .iconify {
-    font-size: 9rem;
-    max-width: initial;
-    max-height: initial;
-  }
-  section.about .skillsContainer .skillsWrapper .flatBackground .multipleitems {
-    width: 12vw;
-    font-size: 6rem;
-    max-width: initial;
-    max-height: initial;
-  }
+  height: 66vh;
+  padding: 5%;
 }
 section.about .skillsWrapper {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  margin: 3.5rem;
+  width: 42%;
 }
 section.about .skillsWrapper p {
   font-family: "Poppins", Arial, sans-serif;
   color: #252423;
   text-align: center;
   margin-top: 0.8rem;
-  width: 15vw;
   font-size: 2.4rem;
 }
 section.about .skillsWrapper .flatBackground {
@@ -388,29 +465,30 @@ section.about .skillsWrapper .flatBackground {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  padding: 2.3rem;
-  width: 15vw;
-  max-width: 15vw;
-  min-height: 33vh;
   transition-duration: 0.3s;
   border-radius: 6.5rem;
   margin: 1rem;
+  min-height: 29vh;
+  width: 70%;
+  max-width: 21vw;
+  padding: 3%;
   box-shadow: 1px 4px 3px grey;
+}
+section.about .skillsWrapper .flatBackground.twoItems {
+  flex-direction: column;
 }
 section.about .skillsWrapper .flatBackground:hover {
   border-radius: 8rem;
 }
 section.about .skillsWrapper .flatBackground .multipleitems {
-  font-size: 80em;
+  font-size: 9em;
 }
 section.about .skillsWrapper .flatBackground .iconify {
-  font-size: 92em;
-  max-height: 18vh;
-  max-width: 7vw;
+  font-size: 10em;
   color: white;
 }
-section.about .skillsWrapper .gitAgile {
-  flex-direction: column;
+section.about .skillsWrapper .flatBackground img.multipleitems {
+  width: 35%;
 }
 
 /*COLORS*/
@@ -439,8 +517,9 @@ section.contact {
 }
 
 /*BUTTON STYLING*/
-.mainHeaderWrapper .button {
-  padding: 4.5% 8.5%;
+main .mainHeaderWrapper .button {
+  padding: 5%;
+  margin: 2.5%;
   background-color: #F21628;
   transition-duration: 0.4s;
   font-weight: 900;
@@ -448,24 +527,17 @@ section.contact {
   font-size: 17px;
   border-radius: 20px;
   color: white;
+  font-family: "Roboto", Arial, sans-serif;
 }
-
-.mainHeaderWrapper .button:hover {
+main .mainHeaderWrapper .button:hover {
   background-position: right center;
   background-image: linear-gradient(to right, #F21628 0%, #94101b);
-  color: white;
 }
 
 /*POSITIONING*/
 section.projects .projectsContainer .projectLinksWrapper {
   display: flex;
   justify-content: space-between;
-  flex-flow: row wrap;
-}
-
-.mainHeaderWrapper {
-  display: flex;
-  justify-content: center;
   flex-flow: row wrap;
 }
 
@@ -478,11 +550,6 @@ section.projects h2 {
   color: white;
   font-size: 5.6rem;
   margin: 2.3rem 0 0 18rem;
-}
-@media only screen and (max-width: 600px) {
-  section.projects h2 {
-    margin-left: 12rem;
-  }
 }
 section.projects .projectsContainer {
   display: flex;
@@ -527,51 +594,6 @@ section.projects .projectsContainer a:hover {
 section.projects img {
   width: 32vw;
 }
-@media only screen and (max-width: 1400px) {
-  section.projects .projectsContainer p {
-    font-size: 3rem;
-    text-align: center;
-  }
-  section.projects .projectsContainer a {
-    font-size: 2.5rem;
-  }
-  section.projects .projectsContainer .projectWrapper {
-    width: 39vw;
-    height: 30vh;
-  }
-}
-@media only screen and (max-width: 600px) {
-  section.projects h2 {
-    margin-left: 7.5%;
-    margin-bottom: 3%;
-  }
-  section.projects .projectsContainer {
-    flex-flow: column nowrap;
-  }
-  section.projects .projectsContainer p {
-    font-size: 3rem;
-    text-align: center;
-  }
-  section.projects .projectsContainer a {
-    font-size: 2.5rem;
-  }
-  section.projects .projectsContainer .projectWrapper {
-    width: 80vw;
-    height: 26vh;
-    margin: 14.5% 0;
-  }
-  section.projects .projectsContainer .projectWrapper:hover {
-    height: 44%;
-    width: 93vw;
-  }
-  section.projects .projectsContainer .projectWrapper img {
-    width: 80vw;
-    max-width: 80vw;
-  }
-  section.projects .projectsContainer .projectWrapper .projectLinksWrapper {
-    width: 79vw;
-  }
-}
 
 /*COLORS*/
 main {
@@ -599,8 +621,9 @@ section.contact {
 }
 
 /*BUTTON STYLING*/
-.mainHeaderWrapper .button {
-  padding: 4.5% 8.5%;
+main .mainHeaderWrapper .button {
+  padding: 5%;
+  margin: 2.5%;
   background-color: #F21628;
   transition-duration: 0.4s;
   font-weight: 900;
@@ -608,24 +631,17 @@ section.contact {
   font-size: 17px;
   border-radius: 20px;
   color: white;
+  font-family: "Roboto", Arial, sans-serif;
 }
-
-.mainHeaderWrapper .button:hover {
+main .mainHeaderWrapper .button:hover {
   background-position: right center;
   background-image: linear-gradient(to right, #F21628 0%, #94101b);
-  color: white;
 }
 
 /*POSITIONING*/
 section.projects .projectsContainer .projectLinksWrapper {
   display: flex;
   justify-content: space-between;
-  flex-flow: row wrap;
-}
-
-.mainHeaderWrapper {
-  display: flex;
-  justify-content: center;
   flex-flow: row wrap;
 }
 
@@ -653,116 +669,13 @@ section.contact .contactIconsContainer .iconify {
 section.contact .contactIconsContainer a {
   margin: 0 0.35rem;
 }
-@media only screen and (max-width: 1400px) {
-  section.contact h2 {
-    font-size: 4.8rem;
-  }
-  section.contact .contactIconsContainer img {
-    width: 4vw;
-    height: 5vh;
-  }
-}
-@media only screen and (max-width: 600px) {
-  section.contact h2 {
-    font-size: 4.8rem;
-  }
-  section.contact .contactIconsContainer img {
-    width: 9vw;
-    height: 5vh;
-  }
-}
 
 html {
   font-size: 62.5%;
 }
-@media only screen and (max-width: 1400px) {
-  html {
-    font-size: 56.25%;
-  }
-}
-@media only screen and (max-width: 900px) {
-  html {
-    font-size: 50%;
-  }
-}
-@media only screen and (max-width: 600px) {
-  html {
-    font-size: 43.75%;
-  }
-}
-@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 1200px) {
   html {
     font-size: 75%;
-  }
-}
-@media only screen and (max-width: 600px) {
-  html body {
-    max-width: 600px;
-    width: 100%;
-  }
-}
-
-main {
-  height: 100vh;
-}
-@media only screen and (max-width: 600px) {
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.mainHeaderWrapper {
-  height: 100%;
-  align-items: center;
-  flex-flow: column nowrap;
-  width: fit-content;
-  margin: 0 40rem;
-}
-.mainHeaderWrapper h1 {
-  font-family: "Tomorrow", Arial, sans-serif;
-  color: white;
-  font-size: 6.4rem;
-  width: 41vw;
-}
-.mainHeaderWrapper .button {
-  align-self: flex-start;
-  margin-top: 1.8rem;
-  font-family: "Roboto", Arial, sans-serif;
-}
-@media only screen and (max-width: 600px) {
-  .mainHeaderWrapper .button {
-    padding: 8% 13%;
-    margin-top: 0;
-    align-self: center;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  .mainHeaderWrapper {
-    margin: 0 24rem;
-    height: 80vh;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .mainHeaderWrapper {
-    margin: 0 10rem 0 15rem;
-  }
-  .mainHeaderWrapper h1 {
-    width: 65vw;
-    margin-bottom: 3rem;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .mainHeaderWrapper {
-    margin-left: 0;
-    margin-right: 0;
-    height: 100vh;
-    width: 100vw;
-    justify-content: space-evenly;
-  }
-  .mainHeaderWrapper h1 {
-    margin: 0 2rem;
-    width: 95vw;
-    text-align: center;
   }
 }
 

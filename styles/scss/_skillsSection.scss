@@ -1,4 +1,4 @@
-@import 'variables';
+@import 'config';
 
 section.about {
     height: 100vh;
@@ -18,29 +18,27 @@ section.about {
         display: flex;
         justify-content: center;
         flex-flow: row nowrap;
-        margin: 4.5rem 10rem;
+        height: 66vh;
+        padding: 5%;
 
         @include responsive(tab-land) {
             flex-wrap: wrap;
             .skillsWrapper {
-                margin: 2.5rem;
+            
             p {
                     margin-top: 0;
                     width: 28vw;
                 }
 
             .flatBackground {
-                min-height: 20vh;
+                
                 .iconify {
-                    font-size: 9rem;
-                    max-width: initial;
-                    max-height: initial;
+                    color: white;
+                    
                 }
                 .multipleitems {
-                    width: 7vw;
-                    font-size: 8rem;
-                    max-width: initial;
-                    max-height: initial;
+                    color: white;
+                    
                 }
             }
         }
@@ -49,26 +47,24 @@ section.about {
     
         @include responsive(tab-port){
             flex-wrap: wrap;
+            
             .skillsWrapper {
-                margin: 2.5rem;
+                
             p {
                     margin-top: 0;
                     width: 28vw;
                 }
 
             .flatBackground {
-                min-height: 23vh;
-                min-width: 25vw;
+                
+
                 .iconify {
-                    font-size: 15rem;
-                    max-width: initial;
-                    max-height: initial;
+                    color: white;
+                    
                 }
                 .multipleitems {
-                    width: 12vw;
-                    font-size: 12rem;
-                    max-width: initial;
-                    max-height: initial;
+                    color: white;
+                    
                 }
             }
         }
@@ -77,26 +73,19 @@ section.about {
         @include responsive(phone) {
             margin: 0;
             margin-top: 10%;
-            min-width: 50vw;
+            justify-content: center;
+            
+
             .skillsWrapper{
-                margin: 2% 2% 18.5%;
                 padding: 0;
 
             .flatBackground {
-                min-height: 12vh;
-                width: 24vw;
-                max-width: 24vw;
+                
+                min-height: 18vh;
+                min-width: 31vw;
 
                 .iconify {
-                    font-size: 9rem;
-                    max-width: initial;
-                    max-height: initial;
-                }
-                .multipleitems {
-                    width: 12vw;
-                    font-size: 6rem;
-                    max-width: initial;
-                    max-height: initial;
+                    font-size: 7rem;
                 }
             }
         }
@@ -110,13 +99,12 @@ section.about {
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        margin: 3.5rem;
+        width: 42%;
         p {
             font-family: $thirdFontStack;
             color: $aboutSectionSecondaryColor;
             text-align: center;
             margin-top: 0.8rem;
-            width: 15vw;
             font-size: 2.4rem;
         }
         .flatBackground {
@@ -124,32 +112,32 @@ section.about {
             flex-flow: row wrap;
             justify-content: center;
             align-items: center;
-            padding: 2.3rem;
-            width: 15vw;
-            max-width: 15vw;
-            min-height: 33vh;
             transition-duration: 0.3s;
             border-radius: 6.5rem;
             margin: 1rem;
+            min-height: 29vh;
+            width: 70%;
+            max-width: 21vw;
+            padding: 3%;
             @extend %skillsWrapperColor;
             box-shadow: (1px 4px 3px grey);
+            &.twoItems {
+                flex-direction: column;
+            }
             &:hover {
                 @extend %skillsWrapperColorHover;
                 border-radius: 8.0rem;
             }
             .multipleitems {
-                font-size: 80em;
+                font-size: 9em;
             }
             .iconify {
-                font-size: 92em;
-                max-height: 18vh;
-                max-width: 7vw;
+                font-size: 10em;
                 color: white;
             }
-        }
-
-        .gitAgile {
-            flex-direction: column;
+            img.multipleitems {
+                width: 35%;
+            }
         }
         }
     }

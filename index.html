@@ -11,10 +11,13 @@
 <body>
     <main>
         <nav>
-            <input type="checkbox" id="menuicon" name="menuicon" class="dropdown">
-                <label for="menuicon" class="menuIcon"><img class="imgMenuIcon" src="assets/menu.png"></label>
-                <label for="menuicon" class="xIcon"><img src="assets/times.png"></label>
-            <ul>
+            <button id="navButton" class="hamburger hamburger--elastic" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner">
+                  </span>
+                </span>
+              </button>
+            <ul id="navLinks">
                 <li><a href="index.html">INICIO</a></li>
                 <li><a href="#about">ACERCA DE MI</a></li>
                 <li><a href="#projects">PROYECTOS</a></li>
@@ -39,7 +42,7 @@
                 <p>Proficiencia en HTML5, CSS, SASS y JavaScript</p>
             </div>
             <div class="skillsWrapper">
-                <div class="flatBackground gitAgile">
+                <div class="flatBackground twoItems">
                     <span class="iconify multipleitems" data-icon="brandico:github-text" data-inline="false"></span>
                     <img class="iconify multipleitems" src="assets/agile.svg">
                 </div>
@@ -88,5 +91,6 @@
             <a href="https://www.linkedin.com/in/randrerd/" target="_blank"><span class="iconify" data-icon="brandico:linkedin-rect" data-inline="false"></span></a>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 </html>

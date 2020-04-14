@@ -1,7 +1,9 @@
-@import 'variables';
+@import 'config';
 @import 'reset';
 @import 'mediaQueries';
+@import '../hamburgers/hamburgers.scss';
 @import 'nav';
+@import 'mainSection';
 @import 'skillsSection';
 @import 'projectsSection';
 @import 'footer';
@@ -34,84 +36,3 @@ body {
 }
 }
 
-main {
-    height: 100vh;
-    @extend %mainBackgroundColor;
-
-    @include responsive(tab-land) {
-
-    }
-
-    @include responsive(tab-port){
-
-    }
-
-    @include responsive(phone) {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    @include responsive(big-desktop) {
-
-    }
-}
-
-.mainHeaderWrapper {
-    @extend %flexJustifyCenter;
-    height: 100%;
-    align-items: center;
-    flex-flow: column nowrap;
-    width: fit-content;
-    margin: 0 40rem;
-    h1 {
-        font-family: $primaryFontStack;
-        color: $primaryTextColor;
-        font-size: 6.4rem;
-        width: 41vw;
-    }
-    .button {
-        @extend %mainButtonStyle;
-        align-self: flex-start;
-        margin-top: 1.8rem;
-        font-family: $secondaryFontStack;
-        @include responsive(phone){
-            padding: 8% 13%;
-            margin-top: 0;           
-            align-self: center;
-                }
-        &:hover {
-            @extend %mainButtonBackgroundColorHover;
-        }
-        }
-        @include responsive(tab-land) {
-            margin: 0 24rem;
-            height: 80vh;
-
-        }
-    
-        @include responsive(tab-port){
-            margin: 0 10rem 0 15rem;
-            h1 {
-                width: 65vw;
-                margin-bottom: 3rem;
-            }
-        }
-    
-        @include responsive(phone) {
-            margin-left: 0;
-            margin-right: 0;
-            height: 100vh;
-            width: 100vw;
-            justify-content: space-evenly;
-            h1 {
-                margin: 0 2rem;
-                width: 95vw;
-                text-align: center;
-            }
-        }
-    
-        @include responsive(big-desktop) {
-    
-        }
-    }
