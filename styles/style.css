@@ -275,6 +275,7 @@ main nav .hamburger {
   padding: 5%;
   align-self: center;
   margin-left: auto;
+  outline: none;
 }
 main nav .hamburger-inner,
 main nav .hamburger-inner::before,
