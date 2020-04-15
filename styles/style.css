@@ -542,6 +542,7 @@ section.projects .main-carousel .carousel-cell {
   border-radius: 25px;
   padding: 2%;
   margin: 1%;
+  box-shadow: 1px 2px 2px #989ca5;
 }
 section.projects .main-carousel .carousel-cell p {
   font-family: "Roboto", Arial, sans-serif;
