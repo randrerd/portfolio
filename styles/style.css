@@ -259,6 +259,9 @@ main nav .hamburger {
   margin-left: auto;
   outline: none;
 }
+main nav .hamburger:focus {
+  outline: none;
+}
 main nav .hamburger-inner,
 main nav .hamburger-inner::before,
 main nav .hamburger-inner::after {

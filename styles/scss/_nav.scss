@@ -15,6 +15,10 @@ main {
             align-self: center;
             margin-left: auto;
             outline: none;
+
+            &:focus {
+                outline: none;
+            }
         }
 
         .hamburger-inner,
