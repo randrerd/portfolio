@@ -514,6 +514,12 @@ section.projects h2 {
 section.projects .main-carousel {
   height: 84%;
 }
+section.projects .main-carousel .flickity-button {
+  background: transparent;
+}
+section.projects .main-carousel .flickity-button-icon {
+  fill: #F21628;
+}
 section.projects .main-carousel .carousel-cell {
   min-width: 100%;
   max-width: 100%;

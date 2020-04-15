@@ -15,6 +15,15 @@ section.projects {
     .main-carousel {
         height: 84%;
 
+        .flickity-button {
+            background: transparent;
+
+        }
+
+        .flickity-button-icon {
+            fill: $primaryButtonColor;
+        }
+
         .carousel-cell {
             min-width: 100%;
             max-width: 100%;
