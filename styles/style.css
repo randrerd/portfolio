@@ -504,6 +504,8 @@ main .mainHeaderWrapper .button:hover {
 /*POSITIONING*/
 section.projects {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 section.projects h2 {
   height: 8%;
@@ -513,7 +515,13 @@ section.projects h2 {
   margin: 5%;
 }
 section.projects .main-carousel {
-  height: 84%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  bottom: 10%;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
 }
 section.projects .main-carousel .flickity-button {
   background: transparent;
@@ -522,19 +530,23 @@ section.projects .main-carousel .flickity-button-icon {
   fill: #F21628;
 }
 section.projects .main-carousel .carousel-cell {
-  min-width: 100%;
-  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 80vh;
   justify-content: center;
+  width: 93.5%;
+  background-color: white;
+  border-radius: 25px;
+  padding: 2%;
+  margin: 1%;
 }
 section.projects .main-carousel .carousel-cell p {
-  font-family: "Poppins", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 600;
   font-size: 2em;
-  color: white;
+  color: #111626;
   text-align: center;
+  min-height: 3em;
 }
 section.projects .main-carousel .carousel-cell img {
   width: 70%;
@@ -543,11 +555,13 @@ section.projects .main-carousel .carousel-cell .projectLinksWrapper {
   width: 70%;
   display: flex;
   justify-content: space-between;
+  margin-top: 1.5%;
 }
 section.projects .main-carousel .carousel-cell .projectLinksWrapper a {
   color: #F21628;
   font-family: "Poppins", Arial, sans-serif;
   font-size: 1.5em;
+  font-weight: 400;
 }
 
 /*COLORS*/
@@ -598,12 +612,11 @@ section.contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 15vh;
 }
 section.contact h2 {
   color: white;
   font-family: "Tomorrow", Arial, sans-serif;
-  font-size: 3.8rem;
+  font-size: 4.8rem;
   margin-bottom: 1rem;
 }
 section.contact .contactIconsContainer {
@@ -612,7 +625,7 @@ section.contact .contactIconsContainer {
   justify-content: space-evenly;
 }
 section.contact .contactIconsContainer .iconify {
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: #F21628;
 }
 section.contact .contactIconsContainer a {
