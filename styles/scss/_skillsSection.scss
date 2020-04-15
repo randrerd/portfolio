@@ -3,141 +3,69 @@
 section.about {
     height: 100vh;
     @extend %aboutBackgroundColor;
-    padding: 1.5rem;
+    flex-direction: column;
+    justify-content: flex-start;
+
     h2 {
         font-family: $primaryFontStack;
         color: $secondaryTextColor;
         font-size: 5.6rem;
-        margin-top: 2rem;
-        margin-left: 18rem;
-        @include responsive(phone){
-            margin-left: 7.5%;
-        }
+        height: 22%;
+        margin: 5%;
     }
+
     .skillsContainer {
         display: flex;
-        justify-content: center;
-        flex-flow: row nowrap;
-        height: 66vh;
-        padding: 5%;
+        flex-wrap: wrap;
+        height: 78%;
 
-        @include responsive(tab-land) {
-            flex-wrap: wrap;
-            .skillsWrapper {
-            
-            p {
-                    margin-top: 0;
-                    width: 28vw;
-                }
 
-            .flatBackground {
-                
-                .iconify {
-                    color: white;
-                    
-                }
-                .multipleitems {
-                    color: white;
-                    
-                }
-            }
-        }
-
-        }
-    
-        @include responsive(tab-port){
-            flex-wrap: wrap;
-            
-            .skillsWrapper {
-                
-            p {
-                    margin-top: 0;
-                    width: 28vw;
-                }
-
-            .flatBackground {
-                
-
-                .iconify {
-                    color: white;
-                    
-                }
-                .multipleitems {
-                    color: white;
-                    
-                }
-            }
-        }
-        }
-    
-        @include responsive(phone) {
-            margin: 0;
-            margin-top: 10%;
-            justify-content: center;
-            
-
-            .skillsWrapper{
-                padding: 0;
-
-            .flatBackground {
-                
-                min-height: 18vh;
-                min-width: 31vw;
-
-                .iconify {
-                    font-size: 7rem;
-                }
-            }
-        }
-        }
-    
-        @include responsive(big-desktop) {
-            
-        }
-    }
-    .skillsWrapper {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        width: 42%;
-        p {
-            font-family: $thirdFontStack;
-            color: $aboutSectionSecondaryColor;
-            text-align: center;
-            margin-top: 0.8rem;
-            font-size: 2.4rem;
-        }
-        .flatBackground {
+        .skillsWrapper {
             display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
+            flex-flow: column wrap;
             align-items: center;
-            transition-duration: 0.3s;
-            border-radius: 6.5rem;
-            margin: 1rem;
-            min-height: 29vh;
-            width: 70%;
-            max-width: 21vw;
-            padding: 3%;
-            @extend %skillsWrapperColor;
-            box-shadow: (1px 4px 3px grey);
-            &.twoItems {
-                flex-direction: column;
+            width: 50%;
+
+            p {
+                font-family: $thirdFontStack;
+                color: $aboutSectionSecondaryColor;
+                text-align: center;
+                margin-top: 0.8rem;
+                font-size: 1.75rem;
             }
-            &:hover {
-                @extend %skillsWrapperColorHover;
-                border-radius: 8.0rem;
+
+            .flatBackground {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                transition-duration: 0.3s;
+                border-radius: 40px;
+                @extend %skillsWrapperColor;
+                box-shadow: (1px 4px 3px grey);
+                min-width: 144px;
+                min-height: 154px;
+                height: 53%;
+                width: 77%;
+
+                &.twoItems {
+                    flex-direction: column;
+                }
+
+                &:hover {
+                    @extend %skillsWrapperColorHover;
+                    border-radius: 50px;
+                }
+
+                .iconify {
+                    font-size: 5em;
+                    color: white;
+                }
+
+                img.multipleitems {
+                    width: 35%;
+                }
             }
-            .multipleitems {
-                font-size: 9em;
-            }
-            .iconify {
-                font-size: 10em;
-                color: white;
-            }
-            img.multipleitems {
-                width: 35%;
-            }
-        }
         }
     }
+}

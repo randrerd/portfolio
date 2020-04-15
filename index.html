@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
     <title>Raul Roman | Web Dev </title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/flickity/flickity.css" media="screen">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500%7CRoboto:300%7CTomorrow:500&display=swap" rel="stylesheet">
-    <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
 </head>
 <body>
     <main>
@@ -64,8 +64,8 @@
     </section>
     <section class="projects" id="projects">
         <h2>Proyectos</h2>
-        <div class="projectsContainer">
-            <div class="projectWrapper podchannel">
+        <div class="main-carousel">
+            <div class="carousel-cell">
                 <p>Podcast Channel</p>
                 <img src="assets/podcastchpreview.png">
                 <div class="projectLinksWrapper">
@@ -73,7 +73,7 @@
                     <a href="https://randrerd.github.io/podcast-channel/" target="_blank">Versión live</a>
                 </div>
             </div>
-            <div class="projectWrapper googlehomepage">
+            <div class="carousel-cell">
                 <p>Recreación de la página web de Google</p>
                 <img src="assets/googlepreview.png">
                 <div class="projectLinksWrapper">
@@ -91,6 +91,8 @@
             <a href="https://www.linkedin.com/in/randrerd/" target="_blank"><span class="iconify" data-icon="brandico:linkedin-rect" data-inline="false"></span></a>
         </div>
     </section>
+    <script src="styles/flickity/flickity.pkgd.min.js"></script>
     <script src="script.js"></script>
+    <script src="https://code.iconify.design/1/1.0.5/iconify.min.js"></script>
 </body>
 </html>

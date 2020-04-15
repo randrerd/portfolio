@@ -7,11 +7,11 @@ section.about {
   background-color: white;
 }
 
-section.about .skillsWrapper .flatBackground {
+section.about .skillsContainer .skillsWrapper .flatBackground {
   background-color: #F21628;
 }
 
-section.about .skillsWrapper .flatBackground:hover {
+section.about .skillsContainer .skillsWrapper .flatBackground:hover {
   background-image: radial-gradient(#af0726, #BF0426);
 }
 
@@ -42,12 +42,6 @@ main .mainHeaderWrapper .button:hover {
 }
 
 /*POSITIONING*/
-section.projects .projectsContainer .projectLinksWrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-}
-
 * {
   -webkit-appearance: none;
   border: 0;
@@ -76,11 +70,11 @@ section.about {
   background-color: white;
 }
 
-section.about .skillsWrapper .flatBackground {
+section.about .skillsContainer .skillsWrapper .flatBackground {
   background-color: #F21628;
 }
 
-section.about .skillsWrapper .flatBackground:hover {
+section.about .skillsContainer .skillsWrapper .flatBackground:hover {
   background-image: radial-gradient(#af0726, #BF0426);
 }
 
@@ -111,12 +105,6 @@ main .mainHeaderWrapper .button:hover {
 }
 
 /*POSITIONING*/
-section.projects .projectsContainer .projectLinksWrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-}
-
 /*!
  * Hamburgers
  * @description Tasty CSS-animated hamburgers
@@ -152,7 +140,7 @@ section.projects .projectsContainer .projectLinksWrapper {
 }
 
 .hamburger-box {
-  width: 40px;
+  width: 10px;
   height: 24px;
   display: inline-block;
   position: relative;
@@ -164,7 +152,7 @@ section.projects .projectsContainer .projectLinksWrapper {
   margin-top: -2px;
 }
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  width: 40px;
+  width: 10px;
   height: 4px;
   background-color: #F21628;
   border-radius: 4px;
@@ -222,11 +210,11 @@ section.about {
   background-color: white;
 }
 
-section.about .skillsWrapper .flatBackground {
+section.about .skillsContainer .skillsWrapper .flatBackground {
   background-color: #F21628;
 }
 
-section.about .skillsWrapper .flatBackground:hover {
+section.about .skillsContainer .skillsWrapper .flatBackground:hover {
   background-image: radial-gradient(#af0726, #BF0426);
 }
 
@@ -257,12 +245,6 @@ main .mainHeaderWrapper .button:hover {
 }
 
 /*POSITIONING*/
-section.projects .projectsContainer .projectLinksWrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-}
-
 main {
   height: 100vh;
 }
@@ -321,11 +303,11 @@ section.about {
   background-color: white;
 }
 
-section.about .skillsWrapper .flatBackground {
+section.about .skillsContainer .skillsWrapper .flatBackground {
   background-color: #F21628;
 }
 
-section.about .skillsWrapper .flatBackground:hover {
+section.about .skillsContainer .skillsWrapper .flatBackground:hover {
   background-image: radial-gradient(#af0726, #BF0426);
 }
 
@@ -356,12 +338,6 @@ main .mainHeaderWrapper .button:hover {
 }
 
 /*POSITIONING*/
-section.projects .projectsContainer .projectLinksWrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-}
-
 main {
   display: flex;
   flex-direction: column;
@@ -389,11 +365,11 @@ section.about {
   background-color: white;
 }
 
-section.about .skillsWrapper .flatBackground {
+section.about .skillsContainer .skillsWrapper .flatBackground {
   background-color: #F21628;
 }
 
-section.about .skillsWrapper .flatBackground:hover {
+section.about .skillsContainer .skillsWrapper .flatBackground:hover {
   background-image: radial-gradient(#af0726, #BF0426);
 }
 
@@ -424,71 +400,60 @@ main .mainHeaderWrapper .button:hover {
 }
 
 /*POSITIONING*/
-section.projects .projectsContainer .projectLinksWrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-}
-
 section.about {
   height: 100vh;
-  padding: 1.5rem;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 section.about h2 {
   font-family: "Tomorrow", Arial, sans-serif;
   color: #111626;
   font-size: 5.6rem;
-  margin-top: 2rem;
-  margin-left: 18rem;
+  height: 22%;
+  margin: 5%;
 }
 section.about .skillsContainer {
   display: flex;
-  justify-content: center;
-  flex-flow: row nowrap;
-  height: 66vh;
-  padding: 5%;
+  flex-wrap: wrap;
+  height: 78%;
 }
-section.about .skillsWrapper {
+section.about .skillsContainer .skillsWrapper {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  width: 42%;
+  width: 50%;
 }
-section.about .skillsWrapper p {
+section.about .skillsContainer .skillsWrapper p {
   font-family: "Poppins", Arial, sans-serif;
   color: #252423;
   text-align: center;
   margin-top: 0.8rem;
-  font-size: 2.4rem;
+  font-size: 1.75rem;
 }
-section.about .skillsWrapper .flatBackground {
+section.about .skillsContainer .skillsWrapper .flatBackground {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   transition-duration: 0.3s;
-  border-radius: 6.5rem;
-  margin: 1rem;
-  min-height: 29vh;
-  width: 70%;
-  max-width: 21vw;
-  padding: 3%;
+  border-radius: 40px;
   box-shadow: 1px 4px 3px grey;
+  min-width: 144px;
+  min-height: 154px;
+  height: 53%;
+  width: 77%;
 }
-section.about .skillsWrapper .flatBackground.twoItems {
+section.about .skillsContainer .skillsWrapper .flatBackground.twoItems {
   flex-direction: column;
 }
-section.about .skillsWrapper .flatBackground:hover {
-  border-radius: 8rem;
+section.about .skillsContainer .skillsWrapper .flatBackground:hover {
+  border-radius: 50px;
 }
-section.about .skillsWrapper .flatBackground .multipleitems {
-  font-size: 9em;
-}
-section.about .skillsWrapper .flatBackground .iconify {
-  font-size: 10em;
+section.about .skillsContainer .skillsWrapper .flatBackground .iconify {
+  font-size: 5em;
   color: white;
 }
-section.about .skillsWrapper .flatBackground img.multipleitems {
+section.about .skillsContainer .skillsWrapper .flatBackground img.multipleitems {
   width: 35%;
 }
 
@@ -501,11 +466,11 @@ section.about {
   background-color: white;
 }
 
-section.about .skillsWrapper .flatBackground {
+section.about .skillsContainer .skillsWrapper .flatBackground {
   background-color: #F21628;
 }
 
-section.about .skillsWrapper .flatBackground:hover {
+section.about .skillsContainer .skillsWrapper .flatBackground:hover {
   background-image: radial-gradient(#af0726, #BF0426);
 }
 
@@ -536,64 +501,46 @@ main .mainHeaderWrapper .button:hover {
 }
 
 /*POSITIONING*/
-section.projects .projectsContainer .projectLinksWrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-}
-
 section.projects {
   height: 100vh;
-  padding: 1.5rem;
 }
 section.projects h2 {
+  height: 8%;
   font-family: "Tomorrow", Arial, sans-serif;
+  font-size: 5em;
   color: white;
-  font-size: 5.6rem;
-  margin: 2.3rem 0 0 18rem;
+  margin: 5%;
 }
-section.projects .projectsContainer {
+section.projects .main-carousel {
+  height: 84%;
+}
+section.projects .main-carousel .carousel-cell {
+  min-width: 100%;
+  max-width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   height: 80vh;
   justify-content: center;
 }
-section.projects .projectsContainer .projectWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 2rem;
-  transition-duration: 0.4s;
-  width: 36vw;
-  height: 43vh;
-}
-section.projects .projectsContainer .projectWrapper:hover {
-  background-color: #0b0e18;
-  border-radius: 8rem;
-  height: 60%;
-}
-section.projects .projectsContainer p {
+section.projects .main-carousel .carousel-cell p {
+  font-family: "Poppins", Arial, sans-serif;
+  font-size: 2em;
   color: white;
-  font-family: "Poppins", Arial, sans-serif;
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
+  text-align: center;
 }
-section.projects .projectsContainer .projectLinksWrapper {
-  margin-top: 0.8rem;
-  width: 29vw;
+section.projects .main-carousel .carousel-cell img {
+  width: 70%;
 }
-section.projects .projectsContainer a {
+section.projects .main-carousel .carousel-cell .projectLinksWrapper {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+section.projects .main-carousel .carousel-cell .projectLinksWrapper a {
   color: #F21628;
-  font-weight: lighter;
   font-family: "Poppins", Arial, sans-serif;
-  font-size: 1.5rem;
-}
-section.projects .projectsContainer a:hover {
-  font-weight: normal;
-}
-section.projects img {
-  width: 32vw;
+  font-size: 1.5em;
 }
 
 /*COLORS*/
@@ -605,11 +552,11 @@ section.about {
   background-color: white;
 }
 
-section.about .skillsWrapper .flatBackground {
+section.about .skillsContainer .skillsWrapper .flatBackground {
   background-color: #F21628;
 }
 
-section.about .skillsWrapper .flatBackground:hover {
+section.about .skillsContainer .skillsWrapper .flatBackground:hover {
   background-image: radial-gradient(#af0726, #BF0426);
 }
 
@@ -640,12 +587,6 @@ main .mainHeaderWrapper .button:hover {
 }
 
 /*POSITIONING*/
-section.projects .projectsContainer .projectLinksWrapper {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-}
-
 section.contact {
   display: flex;
   flex-direction: column;

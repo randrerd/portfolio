@@ -2,115 +2,51 @@
 
 section.projects {
     height: 100vh;
-    padding: 1.5rem;
     @extend %projectBackgroundColor;
+    
     h2 {
+        height: 8%;
         font-family: $primaryFontStack;
+        font-size: 5em;
         color: $primaryTextColor;
-        font-size: 5.6rem;
-        margin: 2.3rem 0 0 18rem;
-        @include responsive(phone) {
-            margin-left: 12rem;
-        }
+        margin: 5%;
     }
-    .projectsContainer {
-        display: flex;
-        align-items: center;
-        height: 80vh;
-        justify-content: center;
-        .projectWrapper {
+    
+    .main-carousel {
+        height: 84%;
+
+        .carousel-cell {
+            min-width: 100%;
+            max-width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
+            height: 80vh;
             justify-content: center;
-            margin: 2rem;
-            transition-duration: 0.4s;
-            width: 36vw;
-            height: 43vh;
-            &:hover {
-                background-color: $projectHoverBackgroundColor;
-                border-radius: 8.0rem;
-                height: 60%;
+
+            p {
+                font-family: $thirdFontStack;
+                font-size: 2em;
+                color: $primaryTextColor;
+                text-align: center;
             }
-        }
-        p {
-            color: white;
-            font-family: $thirdFontStack;
-            margin-bottom: 1.5rem;
-            font-size: 1.8rem;
-        }
-        .projectLinksWrapper {
-            margin-top: 0.8rem;
-            width: 29vw;
-            @extend %flexJustifyBetween;
-        }
-        a {
-            color: $primaryButtonColor;
-            font-weight: lighter;
-            font-family: $thirdFontStack;
-            font-size: 1.5rem;
-            &:hover {
-                font-weight: normal;
+
+            img {
+                width: 70%;
             }
+
+            .projectLinksWrapper {
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+
+            a {
+                color: $primaryButtonColor;
+                font-family: $thirdFontStack;
+                font-size: 1.5em;
+            }
+
+        }
         }
     }
-        img {
-            width: 32vw;
-        }
-        
-        @include responsive(tab-land) {
-            .projectsContainer {
-                p {
-                    font-size: 3rem;
-                    text-align: center;
-                }
-                a {
-                    font-size: 2.5rem;
-                }
-
-                .projectWrapper {
-                    width: 39vw;
-                    height: 30vh;
-                }
-            }
-
-        }
-        
-        
-        @include responsive(tab-port) {
-        }
-        
-        @include responsive(phone) {
-            h2 {
-                margin-left: 7.5%;
-                margin-bottom: 3%;
-            }
-            .projectsContainer {
-                flex-flow: column nowrap;
-                p {
-                    font-size: 3rem;
-                    text-align: center;
-                }
-                a {
-                    font-size: 2.5rem;
-                }
-                .projectWrapper {
-                    width: 80vw;
-                    height: 26vh;
-                    margin: 14.5% 0;
-                    &:hover {
-                        height: 44%;
-                        width: 93vw;
-                    }
-                    img {
-                        width: 80vw;
-                        max-width: 80vw;
-                    }
-                    .projectLinksWrapper {
-                        width: 79vw;
-                    }
-                }
-            }
-        }
-        
     }
