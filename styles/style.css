@@ -259,7 +259,7 @@ main nav .hamburger {
   margin-left: auto;
   outline: none;
 }
-main nav .hamburger:focus {
+main nav .hamburger:focus:active {
   outline: none;
 }
 main nav .hamburger-inner,

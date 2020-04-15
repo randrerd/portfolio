@@ -16,7 +16,7 @@ main {
             margin-left: auto;
             outline: none;
 
-            &:focus {
+            &:focus:active {
                 outline: none;
             }
         }
