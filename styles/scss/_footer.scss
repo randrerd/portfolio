@@ -23,5 +23,8 @@ section.contact {
         margin: 0 0.35rem;
         }
     }
+    @include responsive(landTablets){
+        padding-top: 5%;
+    }
 
 }

@@ -10,29 +10,26 @@
 
 
 html {
-    font-size: 62.5%;
+    font-size: 45%;
+    
 
-    @include responsive(tab-land) {
-        font-size: 56.25%;
+    @include responsive(phone) {
+    font-size: 52.5%;
     }
 
-    @include responsive(tab-port) {
+    @include responsive(landPhone) {
+        font-size: 67%;
+    }
+
+    @include responsive(portTablets) {
+    font-size: 82.5%;
+    }
+
+    @include responsive(tablets) {
         font-size: 50%;
     }
 
-    @include responsive(phone) {
-        font-size: 43.75%;
-    }
-
-    @include responsive(big-desktop) {
+    @include responsive(bigDesktop) {
         font-size: 75%;
 }
-
-body {
-    @include responsive(phone) {
-        max-width: 600px;
-        width: 100%;
-    }
 }
-}
-

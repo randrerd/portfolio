@@ -1,14 +1,20 @@
 @mixin responsive($breakpoint) {
-    @if $breakpoint == smallDevices {
-        @media only screen and (min-width: 576px) { @content };
+    @if $breakpoint == phone {
+        @media only screen and (min-width: 350px) { @content };
     }
-    @if $breakpoint == tablets {
-        @media only screen and (min-width: 768px) { @content };
+    @if $breakpoint == landPhone {
+        @media only screen and (min-width: 350px) and (orientation:landscape) { @content };
+    }
+    @if $breakpoint == portTablets {
+        @media only screen and (min-width: 600px) { @content }; 
+    }
+    @if $breakpoint == landTablets {
+        @media only screen and (min-width: 600px) and (orientation: landscape) { @content };
     }
     @if $breakpoint == desktops {
         @media only screen and (min-width: 992px) { @content };
     }
-    @if $breakpoint == big-desktop {
+    @if $breakpoint == bigDesktop {
         @media only screen and (min-width: 1200px) { @content };
     }
 

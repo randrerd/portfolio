@@ -1,7 +1,7 @@
 @import 'config';
 
 section.about {
-    height: 100vh;
+    min-height: 100vh;
     @extend %aboutBackgroundColor;
     flex-direction: column;
     justify-content: flex-start;
@@ -10,8 +10,15 @@ section.about {
         font-family: $primaryFontStack;
         color: $secondaryTextColor;
         font-size: 5.6rem;
-        height: 22%;
         margin: 5%;
+        margin-bottom: 10%;
+    }
+
+    p {
+        font-family: $thirdFontStack;
+        margin: 5%;
+        text-align: center;
+        font-size: 1.5em;
     }
 
     .skillsContainer {
@@ -25,6 +32,7 @@ section.about {
             flex-flow: column wrap;
             align-items: center;
             width: 50%;
+            height: 60%;
 
             p {
                 font-family: $thirdFontStack;
@@ -58,7 +66,7 @@ section.about {
                 }
 
                 .iconify {
-                    font-size: 5em;
+                    font-size: 8em;
                     color: white;
                 }
 
@@ -68,4 +76,16 @@ section.about {
             }
         }
     }
+
+    @include responsive(portTablets) {
+        .skillsContainer {
+            .skillsWrapper {
+        .flatBackground {
+            max-width: 275px;
+            min-height: 245px;
+        }
+    }
+    }
+    }
+
 }
