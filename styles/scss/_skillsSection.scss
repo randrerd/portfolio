@@ -11,7 +11,6 @@ section.about {
         color: $secondaryTextColor;
         font-size: 5.6rem;
         margin: 5%;
-        margin-bottom: 10%;
     }
 
     p {
@@ -19,6 +18,7 @@ section.about {
         margin: 5%;
         text-align: center;
         font-size: 1.5em;
+        color: $secondaryTextColor;
     }
 
     .skillsContainer {
@@ -36,7 +36,7 @@ section.about {
 
             p {
                 font-family: $thirdFontStack;
-                color: $aboutSectionSecondaryColor;
+                color: $secondaryTextColor;
                 text-align: center;
                 margin-top: 0.8rem;
                 font-size: 1.75rem;
@@ -55,6 +55,7 @@ section.about {
                 min-height: 154px;
                 height: 53%;
                 width: 77%;
+                padding: 5%;
 
                 &.twoItems {
                     flex-direction: column;
@@ -80,11 +81,36 @@ section.about {
     @include responsive(portTablets) {
         .skillsContainer {
             .skillsWrapper {
-        .flatBackground {
-            max-width: 275px;
-            min-height: 245px;
+                .flatBackground {
+                    max-width: 275px;
+                    min-height: 245px;
+                }
+            }
         }
     }
+
+    @include responsive(desktops) {
+        .skillsContainer{
+            justify-content: center;
+
+        .skillsWrapper {
+            max-width: 352px;
+
+                .flatBackground {
+                    max-height: initial;
+                    max-width: 289px;
+                    height: 36vh;
+                    border-radius: 126px;
+                    padding-right: 8%;
+                    transition-duration: .8s;
+                    &:hover{
+                        border-radius: 250px;
+                    }
+                }
+                p {
+                    width: 82%  ;
+                }
+        }
     }
     }
 

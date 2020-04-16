@@ -88,6 +88,23 @@ main {
                 }
             }
 
+            @include responsive(desktops) {
+                #navButton {
+                    display: none;
+                }
+                #navLinks {
+                    top: initial;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    padding: initial;
+                    height: initial;
+                    background-color: transparent;
+
+                    li {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
         
     }
 }

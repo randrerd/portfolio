@@ -23,4 +23,11 @@ main {
         @extend %mainButtonStyle;
     }
 }
+    .mainHeaderWrapper{
+        @include responsive(desktops){
+            width: 40%;
+            align-items: flex-start;
+            text-align: left;
+    }
+}
 }

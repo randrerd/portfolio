@@ -40,7 +40,9 @@ section.projects {
             margin: 0.5%;
             box-shadow: 1px 2px 2px rgb(152, 156, 165);
 
-            
+            .projectDescription{
+                display: none;
+            }
 
             p {
                 font-family: $secondaryFontStack;
@@ -55,8 +57,11 @@ section.projects {
                 width: 70%;
             }
 
-            .projectLinksWrapper {
+            .bSideCarousel {
                 width: 70%;
+            }
+
+            .projectLinksWrapper {
                 display: flex;
                 justify-content: space-between;
                 margin-top: 1.5%;
@@ -88,5 +93,63 @@ section.projects {
             width: 60%;
         }
     }
+  }
+
+  @include responsive(desktops){
+      .main-carousel {
+          width: 80%;
+          align-self: center;
+
+        .carousel-cell{
+            width: 95%;
+            min-height: 73vh;
+            box-shadow: none;
+            border: 1px solid white;
+
+            .projectTitle {
+                color: $secondaryTextColor;
+                width: max-content;
+                padding: 1%;
+                font-size: 3em;
+                margin-top: 4%;
+                min-height: initial;
+            }
+
+            img {
+                border: 1px solid black;
+                width: 55%;
+            }
+
+            .bSideCarousel {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            .projectDescription{
+                display: block;
+                font-size: 1.5em;
+                min-height: initial;
+                width: 42%;
+                font-weight: lighter;
+                margin: 1.5%;
+                color: $secondaryTextColor;
+                font-family: $thirdFontStack;
+            }
+
+            .projectLinksWrapper{
+                width: 42%;
+                margin: 1.5% 2%;
+            }
+        }
+        .flickity-prev-next-button.previous {
+            left: -40px;
+        }
+
+        .flickity-prev-next-button.next {
+            right: -40px;
+        }
+      }
+  }
 }
-    }

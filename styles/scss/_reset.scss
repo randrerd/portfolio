@@ -1,3 +1,4 @@
+@import 'config';
 * {
     -webkit-appearance: none;
     border: 0;
@@ -8,6 +9,9 @@
     font-weight: normal;
 }
 
+a {
+  color: $primaryButtonColor;
+}
   
 img {
     max-width: 100%;
