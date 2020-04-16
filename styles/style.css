@@ -246,7 +246,7 @@ main .mainHeaderWrapper .button:hover {
 
 /*POSITIONING*/
 main {
-  height: 100vh;
+  min-height: 100vh;
 }
 main nav {
   height: 10%;
