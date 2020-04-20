@@ -12,6 +12,7 @@ var flkty = new Flickity( elem, {
   cellAlign: 'left',
   contain: true,
   groupCells: true,
+  imagesLoaded: true,
 });
 
 // element argument can be a selector string
