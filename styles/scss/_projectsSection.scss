@@ -12,6 +12,7 @@ section.projects {
         font-size: 5em;
         color: $primaryTextColor;
         margin: 5%;
+        margin-bottom: 3%;
     }
     
     .main-carousel {
@@ -97,12 +98,12 @@ section.projects {
 
   @include responsive(desktops){
       .main-carousel {
-          width: 80%;
+          width: 64%;
           align-self: center;
 
         .carousel-cell{
             width: 95%;
-            min-height: 73vh;
+            max-height: 38em;
             border: 1px solid white;
 
             .projectTitle {
@@ -128,7 +129,7 @@ section.projects {
 
             .projectDescription{
                 display: block;
-                font-size: 1.5em;
+                font-size: 1.25em;
                 min-height: initial;
                 width: 42%;
                 font-weight: lighter;

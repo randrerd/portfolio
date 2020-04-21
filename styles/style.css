@@ -646,6 +646,7 @@ section.projects h2 {
   font-size: 5em;
   color: white;
   margin: 5%;
+  margin-bottom: 3%;
 }
 section.projects .main-carousel {
   display: flex;
@@ -718,12 +719,12 @@ section.projects .currentInfo {
 }
 @media only screen and (min-width: 992px) {
   section.projects .main-carousel {
-    width: 80%;
+    width: 64%;
     align-self: center;
   }
   section.projects .main-carousel .carousel-cell {
     width: 95%;
-    min-height: 73vh;
+    max-height: 38em;
     border: 1px solid white;
   }
   section.projects .main-carousel .carousel-cell .projectTitle {
@@ -746,7 +747,7 @@ section.projects .currentInfo {
   }
   section.projects .main-carousel .carousel-cell .projectDescription {
     display: block;
-    font-size: 1.5em;
+    font-size: 1.25em;
     min-height: initial;
     width: 42%;
     font-weight: lighter;
