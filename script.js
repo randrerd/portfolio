@@ -1,3 +1,8 @@
+AOS.init({
+  duration: 800,
+});
+
+
 let btn = document.getElementById("navButton");
 let navLinks = document.getElementById("navLinks");
 
