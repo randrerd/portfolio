@@ -724,7 +724,7 @@ section.projects .currentInfo {
   }
   section.projects .main-carousel .carousel-cell {
     width: 95%;
-    max-height: 38em;
+    max-height: 40em;
     border: 1px solid white;
   }
   section.projects .main-carousel .carousel-cell .projectTitle {
