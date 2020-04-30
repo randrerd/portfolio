@@ -96,6 +96,14 @@ main .mainHeaderWrapper .button:hover {
   font-weight: normal;
 }
 
+p {
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  line-height: 1.1;
+}
+
 a {
   color: #F21628;
 }
