@@ -1,6 +1,8 @@
 @import 'config';
 
-* {
+*,
+*:after,
+*:before{
   -webkit-appearance: none;
   border: 0;
   margin: 0;

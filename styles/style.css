@@ -86,7 +86,9 @@ main .mainHeaderWrapper .button:hover {
 }
 
 /*POSITIONING*/
-* {
+*,
+*:after,
+*:before {
   -webkit-appearance: none;
   border: 0;
   margin: 0;
