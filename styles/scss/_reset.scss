@@ -1,22 +1,29 @@
 @import 'config';
+
 * {
-    -webkit-appearance: none;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style: none;
-    font-weight: normal;
+  -webkit-appearance: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-weight: normal;
 }
+
+// *,
+// *:after,
+// *:before {
+//   box-sizing: border-box
+// }
 
 a {
   color: $primaryButtonColor;
 }
-  
+
 img {
-    max-width: 100%;
-    height: auto;
-  }
+  max-width: 100%;
+  height: auto;
+}
 
 a.button {
   cursor: default;

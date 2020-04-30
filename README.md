@@ -1,2 +1,27 @@
-This is my first personal portfolio, I used HTML, CSS, SASS as the CSS preprocessor and Vanilla JavaScript. <br>
-I plan to update it with more functionality and dynamic stylings as I continue to expand my knowledge on web development, I will update it to add the projects I'll work on in the future.
+# Portafolio Personal
+Sitio web estático creado con el objetivo de mostrar proyectos que he realizado y habilidades adquiridas en el mundo del desarrollo web. <br>
+
+## Tecnologías y recursos utilizados:
+-   HTML
+-   CSS
+-   SASS 
+-   Vanilla JavaScript
+-   Git
+-   Metodología Mobile First 
+-   [Flickity](https://github.com/metafizzy/flickity)
+-   [AOS](https://github.com/michalsnik/aos)
+
+----
+
+Static website made with the goal of showing the projects I've worked on and the web development skills I've acquired. <br>
+
+## Resources and technologies used on the project:
+
+-   HTML
+-   CSS
+-   SASS 
+-   Vanilla JavaScript
+-   Git
+-   Mobile First approach
+-   [Flickity](https://github.com/metafizzy/flickity)
+-   [AOS](https://github.com/michalsnik/aos)
