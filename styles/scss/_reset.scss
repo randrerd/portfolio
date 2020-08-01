@@ -10,6 +10,7 @@
   text-decoration: none;
   list-style: none;
   font-weight: normal;
+  // box-sizing: border-box;
 }
 
 p {
@@ -19,12 +20,6 @@ p {
 h1, h2, h3 {
   line-height: 1.1;
 }
-
-// *,
-// *:after,
-// *:before {
-//   box-sizing: border-box
-// }
 
 a {
   color: $primaryButtonColor;
